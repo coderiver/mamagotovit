@@ -1,2 +1,7 @@
 .l-content { min-height: 100%; height: auto!important; height: 100%; width: 1400px; margin: 0px auto -167px; }
 .l-content .hFooter { height: 167px; clear: both; }
+
+.content__top { padding: 73px 184px 71px; }
+.content__top article { width: 600px; }
+.content__top article h1 { font: 40px "HelveticaNeue-Bold"; color: #6d6560; margin-bottom: 10px; }
+.content__top article p { font: 24px "HelveticaNeue-Light"; color: #3f3f3f; line-height: 29px; margin-bottom: 27px; }

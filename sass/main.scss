@@ -11,3 +11,20 @@
 		clear:both;
 	}
 }
+.content__top{
+	padding: 73px 184px 71px;
+	article{
+		width: 600px;
+		h1{
+			font: 40px 'HelveticaNeue-Bold';
+			color: #6d6560;
+			margin-bottom: 10px;
+		}
+		p{
+			font: 24px 'HelveticaNeue-Light';
+			color: #3f3f3f;
+			line-height: 29px;
+			margin-bottom: 27px;
+		}
+	}
+}

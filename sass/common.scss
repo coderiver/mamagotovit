@@ -311,3 +311,16 @@ a{
 	color: #fff;
 	background-color: #bca992;
 }
+// button 
+.button{
+	display:block;
+	width: 186px;
+	height: 40px;
+	padding-top: 10px;
+	text-align: center;
+	@include border-radius(10px);
+	@include background-image(linear-gradient(top, #66a4cc, #2c5081));
+	@include box-shadow(inset 0 0px 10px #8cbde3);
+	font: 21px 'HelveticaNeue-Light';
+	color: white; 
+}
