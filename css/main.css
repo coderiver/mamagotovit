@@ -1,7 +1,16 @@
 .l-content { min-height: 100%; height: auto!important; height: 100%; width: 1400px; margin: 0px auto -167px; }
 .l-content .hFooter { height: 167px; clear: both; }
 
-.content__top { padding: 73px 184px 71px; }
+.content__top { position: relative; padding: 73px 184px 73px; }
 .content__top article { width: 600px; }
-.content__top article h1 { font: 40px "HelveticaNeue-Bold"; color: #6d6560; margin-bottom: 10px; }
-.content__top article p { font: 24px "HelveticaNeue-Light"; color: #3f3f3f; line-height: 29px; margin-bottom: 27px; }
+.content__top article h1 { font: 40px "HelveticaNeue-Bold"; color: #6d6560; margin-bottom: 15px; }
+.content__top article p { font: 24px "HelveticaNeue-Light"; color: #3f3f3f; line-height: 29px; margin-bottom: 32px; }
+
+.pict__1 { position: absolute; top: 84px; right: 367px; border: 2px solid white; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; -webkit-box-shadow: 0 3px 3px #cccccc; -moz-box-shadow: 0 3px 3px #cccccc; box-shadow: 0 3px 3px #cccccc; z-index: 3; }
+
+.pict__2 { position: absolute; top: 125px; right: 260px; border: 2px solid white; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; -moz-transform: rotate(-10deg); -o-transform: rotate(-10deg); -webkit-transform: rotate(-10deg); -ms-transform: rotate(-10deg); transform: rotate(-10deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; -webkit-box-shadow: 0 3px 3px #cccccc; -moz-box-shadow: 0 3px 3px #cccccc; box-shadow: 0 3px 3px #cccccc; z-index: 2; }
+
+.pict__3 { position: absolute; top: 37px; right: 260px; border: 2px solid white; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; -moz-transform: rotate(15deg); -o-transform: rotate(15deg); -webkit-transform: rotate(15deg); -ms-transform: rotate(15deg); transform: rotate(15deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; -webkit-box-shadow: 0 3px 3px #cccccc; -moz-box-shadow: 0 3px 3px #cccccc; box-shadow: 0 3px 3px #cccccc; z-index: 1; }
+
+.content__mid { position: relative; min-height: 565px; padding: 28px 130px 76px; background: url(../img/fon-orange.png); }
+.content__mid h2 { margin-bottom: 47px; text-align: center; font: 32px "HelveticaNeue-Bold"; color: #6d6560; }
