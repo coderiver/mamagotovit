@@ -1,0 +1,68 @@
+@charset "IBM866";
+* { margin: 0; padding: 0; -webkit-text-size-adjust: none; }
+
+html { height: 100%; }
+
+body { height: 100%; min-width: 1400px; font-family: HelveticaNeue-Light,sans-serif; font-weight: normal; font-size: 12px; line-height: 1.4; background-image: url(../img/fon.png); }
+
+a img, fieldset { border: none; }
+
+a { text-decoration: none; color: #00919e; }
+
+.clr { clear: both; }
+
+.header { position: relative; width: 1400px; margin: 0px auto 104px; }
+
+.tema { position: absolute; background: url('../img/icons-s668a4b5968.png') 0 -100px no-repeat; width: 116px; height: 104px; z-index: 2; }
+
+.logo { position: relative; float: left; margin: 0px 29px 0px 237px; background: url('../img/icons-s668a4b5968.png') 0 0 no-repeat; width: 151px; height: 90px; width: 161px; z-index: 2; }
+.logo span { position: absolute; left: 94px; font-size: 13px; color: #fff; }
+
+.menu { position: relative; height: 94px; padding-top: 4px; background-image: url(../img/fon-header.png); }
+
+.menu-item { display: inline-block; margin-left: 15px; vertical-align: top; }
+
+.recipe, .book, .zoom, .Tioma, .photo { position: relative; display: block; max-width: 119px; height: 46px; padding: 48px 10px 0px; -webkit-border-radius: 40px 40px 0px 0px; -moz-border-radius: 40px 40px 0px 0px; -ms-border-radius: 40px 40px 0px 0px; -o-border-radius: 40px 40px 0px 0px; border-radius: 40px 40px 0px 0px; text-align: center; line-height: 15px; font-size: 15px; text-decoration: none; color: #fff; }
+.recipe .recipe__img, .book .recipe__img, .zoom .recipe__img, .Tioma .recipe__img, .photo .recipe__img { position: absolute; top: 13px; left: 25%; background: url('../img/icons-s668a4b5968.png') 0 -310px no-repeat; width: 38px; height: 29px; }
+.recipe .book__img, .book .book__img, .zoom .book__img, .Tioma .book__img, .photo .book__img { position: absolute; top: 13px; left: 35%; background: url('../img/icons-s668a4b5968.png') 0 -593px no-repeat; width: 36px; height: 30px; }
+.recipe .zoom__img, .book .zoom__img, .zoom .zoom__img, .Tioma .zoom__img, .photo .zoom__img { position: absolute; top: 13px; left: 34%; background: url('../img/icons-s668a4b5968.png') 0 -388px no-repeat; width: 35px; height: 34px; }
+.recipe .Tioma__img, .book .Tioma__img, .zoom .Tioma__img, .Tioma .Tioma__img, .photo .Tioma__img { position: absolute; top: 13px; left: 25%; background: url('../img/icons-s668a4b5968.png') 0 -349px no-repeat; width: 34px; height: 29px; }
+.recipe .photo__img, .book .photo__img, .zoom .photo__img, .Tioma .photo__img, .photo .photo__img { position: absolute; top: 13px; left: 39%; background: url('../img/icons-s668a4b5968.png') 0 -560px no-repeat; width: 26px; height: 23px; }
+
+.recipe:hover, .book:hover, .zoom:hover, .Tioma:hover, .photo:hover, .photo_act { background-color: #fff; color: #3f699f; }
+.recipe:hover:before, .book:hover:before, .zoom:hover:before, .Tioma:hover:before, .photo:hover:before, .photo_act:before { content: ""; display: block; position: absolute; left: -7px; bottom: 0px; background: url('../img/icons-s668a4b5968.png') 0 -652px no-repeat; width: 7px; height: 9px; }
+.recipe:hover:after, .book:hover:after, .zoom:hover:after, .Tioma:hover:after, .photo:hover:after, .photo_act:after { content: ""; display: block; position: absolute; right: -8px; bottom: 0px; background: url('../img/icons-s668a4b5968.png') 0 -633px no-repeat; width: 9px; height: 9px; }
+.recipe:hover .recipe__img, .book:hover .recipe__img, .zoom:hover .recipe__img, .Tioma:hover .recipe__img, .photo:hover .recipe__img, .photo_act .recipe__img { position: absolute; top: 13px; left: 25px; background: url('../img/icons-s668a4b5968.png') 0 -483px no-repeat; width: 35px; height: 30px; }
+.recipe:hover .book__img, .book:hover .book__img, .zoom:hover .book__img, .Tioma:hover .book__img, .photo:hover .book__img, .photo_act .book__img { position: absolute; top: 12px; left: 41px; background: url('../img/icons-s668a4b5968.png') 0 -523px no-repeat; width: 42px; height: 27px; }
+.recipe:hover .photo__img, .book:hover .photo__img, .zoom:hover .photo__img, .Tioma:hover .photo__img, .photo:hover .photo__img, .photo_act .photo__img { position: absolute; top: 4px; left: 47px; background: url('../img/icons-s668a4b5968.png') 0 -432px no-repeat; width: 40px; height: 41px; }
+
+.sub-menu { position: absolute; top: 98px; left: 0px; width: 1400px; height: 67px; padding-top: 35px; border-bottom: 2px solid #2d6aa7; background: url(../img/submenu-bg.png) repeat-x; text-align: center; }
+
+.sub-menu__item { display: inline-block; }
+.sub-menu__item a { padding: 0px 65px; font: 21px "HelveticaNeue-Bold"; color: #3f699f; }
+
+.get-recipe { position: absolute; top: 0px; right: 235px; padding-top: 5px; background: url('../img/icons-s668a4b5968.png') 0 -252px no-repeat; width: 99px; height: 48px; -webkit-box-shadow: 0px -40px 15px black; -moz-box-shadow: 0px -40px 15px black; box-shadow: 0px -40px 15px black; text-align: center; font: bold 16px "Segoe Print"; line-height: 16px; color: red; }
+
+.sign-in { position: absolute; top: 0px; right: 13px; display: block; width: 88px; height: 29px; padding-top: 5px; -webkit-border-radius: 0px 0px 15px 15px; -moz-border-radius: 0px 0px 15px 15px; -ms-border-radius: 0px 0px 15px 15px; -o-border-radius: 0px 0px 15px 15px; border-radius: 0px 0px 15px 15px; text-align: center; font-size: 17px; background-color: #f1f1f1; color: #24589b; }
+
+.footer { overflow: hidden; height: 131px; width: 1166px; margin: -167px auto 0px; padding: 36px 81px 0px 153px; border-top: 1px solid #d0d0d0; -webkit-box-shadow: 0px -1px 1px #f0f0f0; -moz-box-shadow: 0px -1px 1px #f0f0f0; box-shadow: 0px -1px 1px #f0f0f0; background-color: #fff; }
+
+.footer__links { float: Left; padding-top: 13px; }
+.footer__links .danone { float: left; margin: 0px 16px 0px 0px; background: url('../img/icons-s668a4b5968.png') 0 -214px no-repeat; width: 63px; height: 28px; }
+.footer__links p { float: left; margin-top: 6px; font: bold 13px "HelveticaNeue-Light"; color: #b6a38c; }
+
+/* default layout */
+.l { width: 100%; display: inline-block; }
+.l .l-col1 { float: left; width: 20%; }
+.l .l-col2 { float: right; width: 70%; }
+
+.l-content { min-height: 100%; height: auto!important; height: 100%; width: 1400px; margin: 0px auto -167px; }
+.l-content .hFooter { height: 167px; clear: both; }
+
+@font-face { font-family: 'HelveticaNeue'; src: url("../fonts/HelveticaNeueCyr-Black.eot"); src: local("☺"), url("../fonts/HelveticaNeueCyr-Black.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Black.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Black.svg") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'HelveticaNeue-Light'; src: url("../fonts/HelveticaNeueCyr-Light.eot"); src: local("☺"), url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Light.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Light.svg") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'HelveticaNeue-Bold'; src: url("../fonts/HelveticaNeueCyr-Bold.eot"); src: local("☺"), url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Bold.svg") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Segoe Print'; src: url("../fonts/Segoe Print.eot"); src: local("☺"), url("../fonts/Segoe Print.woff") format("woff"), url("../fonts/Segoe Print.ttf") format("truetype"), url("../fonts/Segoe Print.svg") format("svg"); font-weight: normal; font-style: normal; }

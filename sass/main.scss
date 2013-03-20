@@ -1,0 +1,13 @@
+@import "lib/base";
+
+.l-content{
+	min-height: 100%;
+	height: auto!important;
+	height: 100%;
+	width: 1400px;
+	margin: 0px auto -167px;
+	.hFooter{
+		height: 167px;
+		clear:both;
+	}
+}

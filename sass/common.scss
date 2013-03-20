@@ -1,0 +1,247 @@
+@import "lib/base";
+
+
+*{margin:0;padding:0;-webkit-text-size-adjust: none; }
+html{height: 100%;}
+body{
+	height: 100%;
+	min-width:1400px;
+	font: {
+		family: HelveticaNeue-Light,sans-serif;
+		weight: normal;
+		size: 12px;
+	}
+	line-height:1.4;
+	background-image: url(../img/fon.png);
+}
+// resets
+a img,fieldset{
+	border:none;
+	}
+a{
+	text-decoration: none;
+	color:#00919e;
+	&:hover{
+
+	}
+}
+.clr{clear:both;}
+// common styles, these could be attached to any block with "@extend %wyswyg;"
+%wyswyg{
+	p{
+		margin-bottom: 1em;
+	}
+	ul,ol{
+		margin: 1em 2em;
+		list-style: disc;
+	}
+	ol{
+		list-style: decimal;
+	}
+	blockquote{
+		margin: 1em 2em;
+	}
+	table{
+		border-spacing: 0;
+		border-collapse: collapse;
+		width: 100%;
+		td{
+			border: 1px solid #ccc;
+			padding: 5px;
+		}
+	}
+}
+
+// css-styles for header
+.header{
+	position: relative;
+	width: 1400px;
+	margin: 0px auto 104px;
+}
+	.tema{
+		position: absolute;
+		@include sized-sprite($icons, tema);
+		z-index: 2;
+	}
+	.logo{
+		position: relative;
+		float: left;
+		margin: 0px 29px 0px 237px;
+		@include sized-sprite($icons, logo);
+		span{
+			position: absolute;
+			left: 94px;
+			font-size: 13px;
+			color: #fff;
+		}
+		width: 161px;
+		z-index: 2;
+	}
+	.menu{
+		position: relative;
+		height: 94px;
+		padding-top:4px;
+		background-image: url(../img/fon-header.png);
+	}
+		.menu-item{
+			display: inline-block;
+			margin-left: 15px;
+			vertical-align: top;
+		}	
+			.recipe,.book,.zoom,.Tioma,.photo{
+				position: relative;
+				display: block;
+				max-width: 119px;
+				height: 46px;
+				padding: 48px 10px 0px;
+				@include border-radius(40px 40px 0px 0px);
+				text-align: center;
+				line-height: 15px;
+				font-size:15px;
+				text-decoration: none;
+				color: #fff;
+				.recipe__img{
+					position:absolute;
+					top: 13px;
+					left: 25%;
+					@include sized-sprite($icons, item);
+				}
+				.book__img{
+					position:absolute;
+					top: 13px;
+					left: 35%;
+					@include sized-sprite($icons, item2);
+				}
+				.zoom__img{
+					position:absolute;
+					top: 13px;
+					left: 34%;
+					@include sized-sprite($icons, item3);
+				}
+				.Tioma__img{
+					position:absolute;
+					top: 13px;
+					left: 25%;
+					@include sized-sprite($icons, item4);
+				}
+				.photo__img{
+					position:absolute;
+					top: 13px;
+					left: 39%;
+					@include sized-sprite($icons, item5);
+				}
+			}
+			.recipe:hover,.book:hover,.zoom:hover,.Tioma:hover,.photo:hover, .photo_act{
+					background-color: #fff;
+					color: #3f699f;
+					&:before{
+						content: "";
+						display: block;
+						position: absolute;
+						left: -7px;
+						bottom: 0px;
+						@include sized-sprite($icons, corner-left);	
+					}
+					&:after{
+						content: "";
+						display: block;
+						position: absolute;
+						right: -8px;
+						bottom: 0px;
+						@include sized-sprite($icons, corner-right);
+					}
+					.recipe__img{
+						position:absolute;
+						top: 13px;
+						left: 25px;;
+						@include sized-sprite($icons, item1-act);
+					}
+					.book__img{
+						position:absolute;
+						top: 12px;
+						left: 41px;;
+						@include sized-sprite($icons, item2-act);
+					}
+					.photo__img{
+						position:absolute;
+						top: 4px;
+						left: 47px;;
+						@include sized-sprite($icons, item5-act);
+					}
+	
+				}	
+		.sub-menu{
+			position: absolute;
+			top: 98px;
+			left: 0px;
+			width: 1400px;
+			height: 67px;
+			padding-top:35px;
+			border-bottom: 2px solid #2d6aa7;
+			background: url(../img/submenu-bg.png) repeat-x;
+			text-align: center;	
+		}
+			.sub-menu__item{
+				display: inline-block;
+				a{
+					padding: 0px 65px;
+					font: 21px 'HelveticaNeue-Bold';
+					color: #3f699f;
+				}
+			}
+	.get-recipe{
+		position: absolute;
+		top: 0px;
+		right: 235px;
+		padding-top: 5px;
+		@include sized-sprite($icons, get-recipe);
+		@include box-shadow(0px -40px 15px #000);
+		text-align: center;
+		font: bold 16px 'Segoe Print';
+		line-height: 16px;
+		color: red;
+	}	
+	.sign-in{
+		position: absolute;
+		top: 0px;
+		right: 13px;
+		display: block;
+		width: 88px;
+		height: 29px;
+		padding-top: 5px;
+		@include border-radius(0px 0px 15px 15px);
+		text-align: center;
+		font-size: 17px;
+		background-color: #f1f1f1;
+		color: #24589b;
+	}		
+
+// css-styles for footer
+.footer{
+	overflow:hidden;
+	height: 131px;
+	width: 1166px;
+	margin: -167px auto 0px;
+	padding: 36px 81px 0px 153px;
+	border-top: 1px solid #d0d0d0;
+	@include box-shadow(0px -1px 1px #f0f0f0);
+	background-color: #fff;
+}
+	.footer__links{
+		float: Left;
+		padding-top:13px;
+		.danone{
+			float: left;
+			margin: 0px 16px 0px 0px;
+			@include sized-sprite($icons, danone);
+		}
+		p{
+			float: left;
+			margin-top: 6px;
+			font: bold 13px 'HelveticaNeue-Light';
+			color: #b6a38c;
+		}
+		.facebook{
+			
+		}
+	}

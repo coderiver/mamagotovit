@@ -1,0 +1,8 @@
+@charset "IBM866";
+@font-face { font-family: 'HelveticaNeue'; src: url("../fonts/HelveticaNeueCyr-Black.eot"); src: local("☺"), url("../fonts/HelveticaNeueCyr-Black.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Black.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Black.svg") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'HelveticaNeue-Light'; src: url("../fonts/HelveticaNeueCyr-Light.eot"); src: local("☺"), url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Light.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Light.svg") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'HelveticaNeue-Bold'; src: url("../fonts/HelveticaNeueCyr-Bold.eot"); src: local("☺"), url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Bold.svg") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Segoe Print'; src: url("../fonts/Segoe Print.eot"); src: local("☺"), url("../fonts/Segoe Print.woff") format("woff"), url("../fonts/Segoe Print.ttf") format("truetype"), url("../fonts/Segoe Print.svg") format("svg"); font-weight: normal; font-style: normal; }
