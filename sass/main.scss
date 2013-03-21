@@ -4,16 +4,19 @@
 	min-height: 100%;
 	height: auto!important;
 	height: 100%;
-	width: 1400px;
 	margin: 0px auto -167px;
 	.hFooter{
 		height: 167px;
 		clear:both;
 	}
 }
+.content{
+	width: 1400px;
+	margin: 0px auto;
+}
 .content__top{
 	position: relative;
-	padding: 73px 184px 73px;
+	padding: 73px 200px 73px;
 	article{
 		width: 600px;
 		h1{
@@ -32,7 +35,7 @@
 .pict__1{
 	position: absolute;
 	top: 84px;
-	right: 367px;
+	right: 342px;
 	border: 2px solid #fff;
 	@include border-radius(10px);
 	@include box-shadow(0 3px 3px #ccc);
@@ -41,7 +44,7 @@
 .pict__2{
 	position: absolute;
 	top:125px;
-	right: 260px;
+	right: 210px;
 	border: 2px solid #fff;
 	@include border-radius(10px);
 	@include rotate(-10);
@@ -51,7 +54,7 @@
 .pict__3{
 	position: absolute;
 	top:37px;
-	right: 260px;
+	right: 230px;
 	border: 2px solid #fff;
 	@include border-radius(10px);
 	@include rotate(15);
@@ -61,7 +64,7 @@
 .content__mid{
 	position: relative;
 	min-height: 565px;
-	padding: 28px 110px 0px;
+	padding: 28px 200px 0px;
 	background: url(../img/fon-orange.png);
 	h2{
 		margin-bottom: 47px;
@@ -71,17 +74,43 @@
 	}
 }
 .mega-prize{
+	position: relative;
 	float:left;
-	width: 439px;
+	overflow: hidden;
+	width: 393px;
+	height: 398px;
 	h3{
 		text-align: center;
 		margin-bottom: 40px;
 		font: 24px 'HelveticaNeue-Bold';
 		color: #3c7ab1;
 	}
-	.mega-prize__item, .mega-prize__item_mid{
+	.mega-prize__item{
 		float: left;
 		width: 160px;
+		p{
+			width: 102px;
+			font: bold 14px 'HelveticaNeue-Light';
+			color: #3c7ab1;
+		}
+	}
+	.mega-prize__item_left{
+		position: absolute;
+		top: 67px;
+		left:231px;
+		width: 160px;
+		p{
+			width: 102px;
+			margin-left: 46px;
+			text-align: center;
+			font: bold 14px 'HelveticaNeue-Light';
+			color: #3c7ab1;
+		}
+	}
+	.mega-prize__item_mid{
+		position: absolute;
+		bottom: 46px;
+		left: 123px;
 		p{
 			width: 102px;
 			margin-left: 32px;
@@ -90,14 +119,10 @@
 			color: #3c7ab1;
 		}
 	}
-	.mega-prize__item_mid{
-		position: absolute;
-		bottom: 80px;
-		left: 256px;
-	}
 	.panasonic{
-		float: left;
-		margin-top: 10px;
+		position: absolute;
+		top: 69px;
+		left: 134px;
 		@include sized-sprite($icons, panasonic);
 	}
 }
@@ -105,7 +130,7 @@
 	position: relative;
 	float: left;
 	width: 289px;
-	margin: 0px 30px;
+	margin: 0px 7px;
 	text-align: center;
 	h3{
 		text-align: center;
