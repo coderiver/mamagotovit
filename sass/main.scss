@@ -61,7 +61,7 @@
 .content__mid{
 	position: relative;
 	min-height: 565px;
-	padding: 28px 130px 76px;
+	padding: 28px 110px 0px;
 	background: url(../img/fon-orange.png);
 	h2{
 		margin-bottom: 47px;
@@ -70,26 +70,71 @@
 		color: #6d6560;
 	}
 }
-// .mega-price{
-// 	float:left;
-// 	width: 434px;
-// 	h3{
-// 		font: 24px 'HelveticaNeue-Bold';
-// 		color: #3c7ab1;
-// 	}
-// 	.mega-price__item1{
-// 		float: left;
-// 		width: 147px;
-// 		.mega-price__img{
-// 			height: 147px;
-// 			border: 1px solid #cfb99e;
-// 			@include border-radius(10px);
-// 			background-color: #fff;
-// 		}
-
-// 	}
-// 	.panasonic{
-// 		float: left;
-// 		@include sized-sprite($icons, panasonic);
-// 	}
-// }
+.mega-prize{
+	float:left;
+	width: 439px;
+	h3{
+		text-align: center;
+		margin-bottom: 40px;
+		font: 24px 'HelveticaNeue-Bold';
+		color: #3c7ab1;
+	}
+	.mega-prize__item, .mega-prize__item_mid{
+		float: left;
+		width: 160px;
+		p{
+			width: 102px;
+			margin-left: 32px;
+			text-align: center;
+			font: bold 14px 'HelveticaNeue-Light';
+			color: #3c7ab1;
+		}
+	}
+	.mega-prize__item_mid{
+		position: absolute;
+		bottom: 80px;
+		left: 256px;
+	}
+	.panasonic{
+		float: left;
+		margin-top: 10px;
+		@include sized-sprite($icons, panasonic);
+	}
+}
+.prize{
+	position: relative;
+	float: left;
+	width: 289px;
+	margin: 0px 30px;
+	text-align: center;
+	h3{
+		text-align: center;
+		margin-bottom: 40px;
+		font: 24px 'HelveticaNeue-Bold';
+		color: #3c7ab1;
+	}
+	.panasonic_mod{
+		position: absolute;
+		right: -9px;
+		top: 90px;
+		@include sized-sprite($icons, panasonic);
+	}
+	p{
+		margin: 10px 0px 0px 50px;
+		text-align: center;
+		font: 18px 'HelveticaNeue-Light';
+		color: #3c7ab1;
+		span{
+			display: block;
+			font-weight: bold;
+		}
+	}
+}
+.content__bot{
+	h2{
+		margin-bottom: 47px;
+		text-align: center;
+		font: 32px 'HelveticaNeue-Bold';
+		color: #6d6560;
+	}
+}
