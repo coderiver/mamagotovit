@@ -1,32 +1,32 @@
 @import "lib/base";
 
 @font-face {
-	font-family: 'HelveticaNeue';
-	src: url('../fonts/HelveticaNeueCyr-Black.eot');
+	font-family: 'OpenSans-r';
+	src: url('fonts/OpenSans-Regular.eot');
 	src: local('☺'),
-	 url('../fonts/HelveticaNeueCyr-Black.woff') format('woff'),
-	 url('../fonts/HelveticaNeueCyr-Black.ttf') format('truetype'),
-	 url('../fonts/HelveticaNeueCyr-Black.svg') format('svg');
+	 url('fonts/OpenSans-Regular.woff') format('woff'),
+	 url('fonts/OpenSans-Regular.ttf') format('truetype'),
+	 url('fonts/OpenSans-Regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'HelveticaNeue-Light';
-	src: url('../fonts/HelveticaNeueCyr-Light.eot');
+	font-family: 'OpenSans-l';
+	src: url('fonts/OpenSans-Light.eot');
 	src: local('☺'),
-	 url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'),
-	 url('../fonts/HelveticaNeueCyr-Light.ttf') format('truetype'),
-	 url('../fonts/HelveticaNeueCyr-Light.svg') format('svg');
+	 url('fonts/OpenSans-Light.woff') format('woff'),
+	 url('fonts/OpenSans-Light.ttf') format('truetype'),
+	 url('fonts/OpenSans-Light.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'HelveticaNeue-Bold';
-	src: url('../fonts/HelveticaNeueCyr-Bold.eot');
-	src: local('☺'), 
-	 url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'),
-	 url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype'),
-	 url('../fonts/HelveticaNeueCyr-Bold.svg') format('svg');
+	font-family: 'OpenSans-b';
+	src: url('fonts/OpenSans-Bold.eot');
+	src: local('☺'),
+	 url('fonts/OpenSans-Bold.woff') format('woff'),
+	 url('fonts/OpenSans-Bold.ttf') format('truetype'),
+	 url('fonts/OpenSans-Bold.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
