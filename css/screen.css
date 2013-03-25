@@ -11,6 +11,11 @@ a { text-decoration: none; color: #00919e; }
 
 .clr { clear: both; }
 
+.l-content { min-height: 100%; height: auto!important; height: 100%; margin: 0px auto -167px; }
+.l-content .hFooter { height: 167px; clear: both; }
+
+.content { width: 1400px; margin: 0px auto; }
+
 .header { position: relative; width: 1400px; margin: 0px auto 104px; }
 
 .tema { position: absolute; background: url('../img/icons-sc764e779ff.png') 0 -100px no-repeat; width: 116px; height: 104px; z-index: 2; }
@@ -98,11 +103,6 @@ a { text-decoration: none; color: #00919e; }
 .l .l-col1 { float: left; width: 20%; }
 .l .l-col2 { float: right; width: 70%; }
 
-.l-content { min-height: 100%; height: auto!important; height: 100%; margin: 0px auto -167px; }
-.l-content .hFooter { height: 167px; clear: both; }
-
-.content { width: 1400px; margin: 0px auto; }
-
 .content__top { position: relative; padding: 73px 200px 73px; }
 .content__top article { width: 600px; }
 .content__top article h1 { font: 40px "OpenSans-b"; color: #6d6560; margin-bottom: 15px; }
@@ -147,3 +147,15 @@ a { text-decoration: none; color: #00919e; }
 @font-face { font-family: 'OpenSans-b'; src: url("../fonts/OpenSans-Bold.eot"); src: local("☺"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.svg") format("svg"); font-weight: normal; font-style: normal; }
 
 @font-face { font-family: 'Segoe Print'; src: url("../fonts/Segoe Print.eot"); src: local("☺"), url("../fonts/Segoe Print.woff") format("woff"), url("../fonts/Segoe Print.ttf") format("truetype"), url("../fonts/Segoe Print.svg") format("svg"); font-weight: normal; font-style: normal; }
+
+.upload { width: 654px; height: 460px; margin: 0px auto; padding: 27px; border: 1px solid #ede9e9; border-top: none; -webkit-border-radius: 0px 0px 10px 10px; -moz-border-radius: 0px 0px 10px 10px; -ms-border-radius: 0px 0px 10px 10px; -o-border-radius: 0px 0px 10px 10px; border-radius: 0px 0px 10px 10px; -webkit-box-shadow: inset 0px -1px 2px #ede9e9; -moz-box-shadow: inset 0px -1px 2px #ede9e9; box-shadow: inset 0px -1px 2px #ede9e9; background-color: #fff; }
+.upload .upload__drop { position: relative; height: 458px; text-align: center; border: 1px solid #d1d1d1; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; background: #f1f1f1 url(../img/upload-bg.png) 50% 50% no-repeat; font: 18px "OpenSans-r"; }
+.upload .upload__drop p { padding-top: 155px; font: 24px "OpenSans-b"; }
+.upload .upload__drop span { display: block; margin: 5px 0px; }
+.upload .upload__drop .upload__field { position: absolute; top: 223px; left: 225px; width: 201px; height: 51px; opacity: 0; z-index: 3; }
+.upload .upload__drop .upload__field:hover { cursor: pointer; }
+.upload .upload__drop .upload__btn { width: 201px; height: 51px; border-left: 1px solid #d9d9d9; border-right: 1px solid #d9d9d9; border-top: 1px solid white; border-bottom: 1px solid #b5b5b5; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2UxZTFlMSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e1e1e1)); background-image: -webkit-linear-gradient(top, #ffffff, #e1e1e1); background-image: -moz-linear-gradient(top, #ffffff, #e1e1e1); background-image: -o-linear-gradient(top, #ffffff, #e1e1e1); background-image: linear-gradient(top, #ffffff, #e1e1e1); -webkit-box-shadow: 0px 1px 1px #dbdbdb; -moz-box-shadow: 0px 1px 1px #dbdbdb; box-shadow: 0px 1px 1px #dbdbdb; font: 20px "OpenSans-l"; color: #004f98; z-index: 1; }
+
+.drop_enter { width: 648px; height: 454px; border: 3px solid #96bbeb; }
+.drop_enter p { padding-top: 153px; }
+.drop_enter span { margin-left: -1px; }

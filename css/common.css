@@ -10,6 +10,11 @@ a { text-decoration: none; color: #00919e; }
 
 .clr { clear: both; }
 
+.l-content { min-height: 100%; height: auto!important; height: 100%; margin: 0px auto -167px; }
+.l-content .hFooter { height: 167px; clear: both; }
+
+.content { width: 1400px; margin: 0px auto; }
+
 .header { position: relative; width: 1400px; margin: 0px auto 104px; }
 
 .tema { position: absolute; background: url('../img/icons-sc764e779ff.png') 0 -100px no-repeat; width: 116px; height: 104px; z-index: 2; }

@@ -51,6 +51,21 @@ a{
 		}
 	}
 }
+// css-styles for content-layer
+.l-content{
+	min-height: 100%;
+	height: auto!important;
+	height: 100%;
+	margin: 0px auto -167px;
+	.hFooter{
+		height: 167px;
+		clear:both;
+	}
+}
+.content{
+	width: 1400px;
+	margin: 0px auto;
+}
 
 // css-styles for header
 .header{
