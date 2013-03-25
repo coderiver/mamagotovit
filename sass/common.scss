@@ -70,7 +70,7 @@ a{
 	@include sized-sprite($icons, logo);
 	span{
 		position: absolute;
-		left: 94px;
+		left: 93px;
 		font-size: 13px;
 		color: #fff;
 	}
@@ -182,10 +182,20 @@ a{
 }
 .sub-menu__item{
 	display: inline-block;
+	position: relative;
 	a{
 		padding: 0px 65px;
 		font: 21px 'OpenSans-b';
 		color: #3f699f;
+	}
+}
+.sub-menu_act{
+	i{
+		display: block;
+		position: absolute;
+		bottom: -41px;
+		left: 50%;
+		@include sized-sprite($icons, sub-menu-act);
 	}
 }
 .get-recipe{

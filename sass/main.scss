@@ -25,6 +25,7 @@
 			margin-bottom: 15px;
 		}
 		p{
+			width: 500px;
 			font: 24px 'OpenSans-l';
 			color: #3f3f3f;
 			line-height: 29px;
@@ -35,7 +36,7 @@
 .pict__1{
 	position: absolute;
 	top: 84px;
-	right: 342px;
+	right: 337px;
 	border: 2px solid #fff;
 	@include border-radius(10px);
 	@include box-shadow(0 3px 3px #ccc);
@@ -44,7 +45,7 @@
 .pict__2{
 	position: absolute;
 	top:125px;
-	right: 210px;
+	right: 215px;
 	border: 2px solid #fff;
 	@include border-radius(10px);
 	@include rotate(-10);
@@ -54,7 +55,7 @@
 .pict__3{
 	position: absolute;
 	top:37px;
-	right: 230px;
+	right: 225px;
 	border: 2px solid #fff;
 	@include border-radius(10px);
 	@include rotate(15);
