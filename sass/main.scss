@@ -2,11 +2,11 @@
 
 .content__top{
 	position: relative;
-	padding: 73px 200px 73px;
+	padding: 74px 202px 73px;
 	article{
-		width: 600px;
+		width: 535px;
 		h1{
-			font: 40px 'OpenSans-b';
+			font: 37px 'OpenSans-b';
 			color: #6d6560;
 			margin-bottom: 15px;
 		}
@@ -21,8 +21,8 @@
 }
 .pict__1{
 	position: absolute;
-	top: 84px;
-	right: 337px;
+	top: 91px;
+	right: 346px;
 	border: 2px solid #fff;
 	@include border-radius(10px);
 	@include box-shadow(0 3px 3px #ccc);
@@ -30,8 +30,8 @@
 }
 .pict__2{
 	position: absolute;
-	top:125px;
-	right: 215px;
+	top:153px;
+	right: 213px;
 	border: 2px solid #fff;
 	@include border-radius(10px);
 	@include rotate(-10);
@@ -40,21 +40,21 @@
 }
 .pict__3{
 	position: absolute;
-	top:37px;
-	right: 225px;
+	top:46px;
+	right: 226px;
 	border: 2px solid #fff;
 	@include border-radius(10px);
-	@include rotate(15);
+	@include rotate(9);
 	@include box-shadow(0 3px 3px #ccc);
 	z-index: 1;
 }
 .content__mid{
 	position: relative;
-	min-height: 565px;
-	padding: 28px 200px 0px;
+	min-height: 489px;
+	padding: 26px 200px 0px;
 	background: url(../img/fon-orange.png);
 	h2{
-		margin-bottom: 47px;
+		margin-bottom: 26px;
 		text-align: center;
 		font: 32px 'OpenSans-b';
 		color: #6d6560;
@@ -75,6 +75,7 @@
 	.mega-prize__item{
 		float: left;
 		width: 160px;
+		margin: 3px 0px 0px -4px;
 		p{
 			width: 102px;
 			font: bold 14px 'OpenSans-l';
@@ -83,8 +84,8 @@
 	}
 	.mega-prize__item_left{
 		position: absolute;
-		top: 67px;
-		left:231px;
+		top: 73px;
+		left:222px;
 		width: 160px;
 		p{
 			width: 102px;
@@ -96,8 +97,8 @@
 	}
 	.mega-prize__item_mid{
 		position: absolute;
-		bottom: 46px;
-		left: 123px;
+		bottom: 18px;
+		left: 114px;
 		p{
 			width: 102px;
 			margin-left: 32px;
@@ -108,31 +109,31 @@
 	}
 	.panasonic{
 		position: absolute;
-		top: 69px;
-		left: 134px;
+		top: 79px;
+		left: 131px;
 		@include sized-sprite($icons, panasonic);
 	}
 }
-.prize{
+.prize, .prize_right{
 	position: relative;
 	float: left;
 	width: 289px;
-	margin: 0px 7px;
+	margin: 0px 3px;
 	text-align: center;
 	h3{
 		text-align: center;
-		margin-bottom: 40px;
+		margin-bottom: 27px;
 		font: 24px 'OpenSans-b';
 		color: #3c7ab1;
 	}
 	.panasonic_mod{
 		position: absolute;
-		right: -9px;
-		top: 90px;
+		right: -5px;
+		top: 78px;
 		@include sized-sprite($icons, panasonic);
 	}
 	p{
-		margin: 10px 0px 0px 50px;
+		margin: 16px 0px 0px 20px;
 		text-align: center;
 		font: 18px 'OpenSans-l';
 		color: #3c7ab1;
@@ -142,11 +143,14 @@
 		}
 	}
 }
+.prize_right{
+	margin: 0px 0px 0px 22px;
+}
 .content__bot{
 	overflow: hidden;
-	padding: 0px 186px 79px 188px;
+	padding: 0px 186px 39px 188px;
 	h2{
-		margin-bottom: 25px;
+		margin-bottom: 3px;
 		text-align: center;
 		font: 32px 'OpenSans-b';
 		color: #6d6560;
@@ -154,7 +158,7 @@
 }
 .all-photo{
 	position:relative;
-	margin:18px 0px 86px;
+	margin: 13px 0px 47px;
 	.hor-line{
 		width: 100%;
 		height: 1px;
@@ -162,7 +166,8 @@
 	}
 	a{
 		position:absolute;
-		left: 43%;
-		top: -25px;
+		left: 44%;
+		top: -20px;
+		height: 39px;
 	}
 }

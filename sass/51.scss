@@ -2,7 +2,6 @@
 
 .upload{
 	width: 654px;
-	height: 460px;
 	margin: 0px auto;
 	padding: 27px;
 	border: 1px solid #ede9e9;
@@ -55,13 +54,52 @@
 	}
 }
 .drop_enter{
-			width: 648px;
-			height: 454px;
-			border: 3px solid #96bbeb;
-			p{
-				padding-top:153px;
-			}
-			span{
-				margin-left: -1px;
-			}
-		}	
+	width: 648px;
+	height: 454px;
+	border: 3px solid #96bbeb;
+	p{
+		padding-top:153px;
+	}
+	span{
+		margin-left: -1px;
+	}
+}	
+
+// ========= styles for page 51_1 ===================
+
+.upload__close{
+	position: absolute;
+	top: -12px;
+	right: -12px;
+	width: 36px;
+	height: 36px;
+	padding-right: 0px;
+	@include border-radius(18px);
+	border: 4px solid #fff;
+	@include background-image(linear-gradient(top, #f09e4e, #b05412));
+	cursor: pointer;
+	@include box-shadow(inset 0px 0px 5px #fadaba);
+	i{
+		position: absolute;
+		top: 7px;
+		left: 8px;
+		display: block;
+		@include sized-sprite($icons, close);
+	}
+	&:hover{
+		@include background-image(linear-gradient(top, #d3722f, #8f3b00));
+	}
+}
+.upload__descr{
+	margin: 24px 0px 0px 0px;
+	.descr__text{
+		float: left;
+		width: 475px;
+		min-height: 75px;
+		border: 2px solid #c9c3c3;
+		@include border-radius(10px);
+	}
+}
+
+
+

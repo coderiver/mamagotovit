@@ -81,7 +81,7 @@ a{
 .logo{
 	position: relative;
 	float: left;
-	margin: 0px 29px 0px 237px;
+	margin: 5px 33px 0px 195px;
 	@include sized-sprite($icons, logo);
 	span{
 		position: absolute;
@@ -100,53 +100,86 @@ a{
 }
 .menu-item{
 	display: inline-block;
-	margin-left: 15px;
+	margin-left: 13px;
 	vertical-align: top;
 }	
 .menu__link{
 	position: relative;
 	display: block;
-	max-width: 119px;
-	height: 46px;
-	padding: 48px 10px 0px;
-	@include border-radius(40px 40px 0px 0px);
+	max-width: 66px;
+	height: 49px;
+	padding: 45px 10px 0px;
+	@include border-radius(43px 43px 0px 0px);
 	text-align: center;
-	line-height: 15px;
-	font-size:15px;
+	font-size:12px;
 	text-decoration: none;
 	color: #fff;
 	.recipe__img{
 		position:absolute;
-		top: 13px;
-		left: 25%;
+		top: 11px;
+		left: 21%;
 		@include sized-sprite($icons, item);
 	}
 	.book__img{
 		position:absolute;
-		top: 13px;
-		left: 35%;
+		top: 14px;
+		left: 25%;
 		@include sized-sprite($icons, item2);
 	}
 	.zoom__img{
 		position:absolute;
-		top: 13px;
-		left: 34%;
+		top: 7px;
+		left: 13%;
 		@include sized-sprite($icons, item3);
 	}
 	.tioma__img{
 		position:absolute;
-		top: 13px;
-		left: 25%;
+		top: 9px;
+		left: 14%;
 		@include sized-sprite($icons, item4);
 	}
 	.photo__img{
 		position:absolute;
-		top: 13px;
-		left: 39%;
+		top: 5px;
+		left: 27%;
 		@include sized-sprite($icons, item5);
 	}
+	&:hover{
+		color: #ffc979;
+		.recipe__img{
+		position:absolute;
+		top: 11px;
+		left: 21%;
+		@include sized-sprite($icons, item1-hover);
+	}
+	.book__img{
+		position:absolute;
+		top: 14px;
+		left: 25%;
+		@include sized-sprite($icons, item2-hover);
+	}
+	.zoom__img{
+		position:absolute;
+		top: 7px;
+		left: 13%;
+		@include sized-sprite($icons, item3-hover);
+	}
+	.tioma__img{
+		position:absolute;
+		top: 9px;
+		left: 14%;
+		@include sized-sprite($icons, item4-hover);
+	}
+	.photo__img{
+		position:absolute;
+		top: 5px;
+		left: 27%;
+		@include sized-sprite($icons, item5-hover);
+	}
+	}
 }
-.menu__link:hover, .photo_act{
+.photo_act{
+	width: 94px;
 	background-color: #fff;
 	color: #3f699f;
 	&:before{
@@ -165,32 +198,20 @@ a{
 		bottom: 0px;
 		@include sized-sprite($icons, corner-right);
 	}
-	.recipe__img{
-		position:absolute;
-		top: 13px;
-		left: 25px;;
-		@include sized-sprite($icons, item1-act);
-	}
-	.book__img{
-		position:absolute;
-		top: 12px;
-		left: 41px;;
-		@include sized-sprite($icons, item2-act);
-	}
 	.photo__img{
 		position:absolute;
-		top: 4px;
-		left: 47px;;
+		top: 5px;
+		left: 27%;
 		@include sized-sprite($icons, item5-act);
 	}
 }	
 .sub-menu{
 	position: absolute;
-	top: 98px;
+	top: 100px;
 	left: 0px;
-	width: 1400px;
-	height: 67px;
-	padding-top:35px;
+	width: 1000px;
+	height: 72px;
+	padding:30px 200px 0px;
 	border-bottom: 2px solid #2d6aa7;
 	background: url(../img/submenu-bg.png) repeat-x;
 	text-align: center;	
@@ -208,15 +229,36 @@ a{
 	i{
 		display: block;
 		position: absolute;
-		bottom: -41px;
+		bottom: -45px;
 		left: 50%;
 		@include sized-sprite($icons, sub-menu-act);
+	}
+}
+.user-profile{
+	position: absolute;
+	top: 0px;
+	right: 445px;
+	width: 100px;
+	padding-top: 11px;
+	text-align: center;
+	p{
+		margin-top: -4px;
+		font: 12px 'OpenSans-r';
+		color: #fff;
+		span{
+			display: block;
+		}
+	}
+	&:hover{
+		p{
+			color: #ffc979;
+		}
 	}
 }
 .get-recipe{
 	position: absolute;
 	top: 0px;
-	right: 235px;
+	right: 207px;
 	padding-top: 5px;
 	@include sized-sprite($icons, get-recipe);
 	@include box-shadow(0px -40px 15px #000);
@@ -224,21 +266,10 @@ a{
 	font: bold 16px 'Segoe Print';
 	line-height: 16px;
 	color: red;
-}	
-.sign-in{
-	position: absolute;
-	top: 0px;
-	right: 13px;
-	display: block;
-	width: 88px;
-	height: 29px;
-	padding-top: 5px;
-	@include border-radius(0px 0px 15px 15px);
-	text-align: center;
-	font-size: 17px;
-	background-color: #f1f1f1;
-	color: #24589b;
-}		
+	&:hover{
+		@include sized-sprite($icons, get-recipe-hover);
+	}
+}			
 
 // css-styles for footer
 .footer{
@@ -246,7 +277,7 @@ a{
 	height: 130px;
 	width: 1346px;
 	margin: -167px auto 0px;
-	padding: 36px 23px 0px 31px;
+	padding: 19px 23px 0px 28px;
 	border-top: 1px solid #d0d0d0;
 	@include box-shadow(0px -1px 1px #f0f0f0);
 	background-color: #fff;
@@ -255,22 +286,22 @@ a{
 	float: Left;
 	.danone{
 		float: left;
-		margin: 6px 16px 0px 0px;
+		margin: 4px 9px 0px 0px;
 		@include sized-sprite($icons, danone);
 	}
 	p{
-		margin: 6px 0px 0px 90px;;
+		margin: 8px 0px 0px 87px;;
 		font: bold 13px 'OpenSans-l';
 		color: #b6a38c;
 	}
 	.facebook{
 		float: left;
-		margin: 6px 0px 0px 20px;
+		margin: 3px 0px 0px 20px;
 		@include sized-sprite($icons, facebook);
 	}
 	.vk{
 		float: left;
-		margin: 6px 0px 0px 8px;
+		margin: 3px 0px 0px 6px;
 		@include sized-sprite($icons, vk);
 	}
 }
@@ -278,8 +309,8 @@ a{
 	float:left;
 	width: 163px;
 	height: 54px;
-	margin-left: 275px;
-	padding: 10px 40px 0px 0px;
+	margin-left: 325px;
+	padding: 20px 7px 0px 0px;
 	border-right: 1px solid #dcd6cf;
 	color: #747474;
 	&:hover{
@@ -297,7 +328,7 @@ a{
 .footer__phone{
 	float: left;
 	width: 307px;
-	margin: 10px 0px 0px 52px;
+	margin: 26px 0px 0px 31px;
 	i{
 		float: left;
 		margin-right: 5px;
@@ -318,7 +349,7 @@ a{
 }
 .switch{
 	float: right;
-	margin-top: 24px;
+	margin-top: 38px;
 	font: 13px 'OpenSans-l';
 }
 .switcher{
@@ -327,7 +358,7 @@ a{
 	height: 22px;
 	padding-top: 5px;
 	text-align: center;
-	@include border-radius(10px);
+	@include border-radius(19px);
 	color: #b2a087;
 }
 .switcher_act{
@@ -338,8 +369,9 @@ a{
 .button{
 	display:block;
 	width: 186px;
-	height: 40px;
-	padding-top: 10px;
+	height: 42px;
+	margin-top: -3px;
+	padding-top: 8px;
 	text-align: center;
 	@include border-radius(10px);
 	@include background-image(linear-gradient(top, #66a4cc, #2c5081));
@@ -357,8 +389,8 @@ a{
 	.small-photo{
 		position: relative;
 		overflow: hidden;
-		width: 304px;
-		height: 244px;
+		width: 302px;
+		height: 241px;
 		padding:10px;
 		background-color: #fff;
 		@include border-radius(10px);
@@ -400,15 +432,14 @@ a{
 		}
 	}
 	.member__name{
-		margin: 5px 0px;
 		text-align: center;
-		font: 18px 'OpenSans-l';
-		color: #3c7ab1;
+		font: 18px 'OpenSans-r';
+		color: #7a7a7a;
 	}
 	.member__comment{
+		margin-bottom: 11px;
 		text-align: center;
-		font: 16px 'OpenSans-l';
-		margin-bottom: 10px;
+		font: 18px 'OpenSans-r';
 	}
 	.member__likes{
 		position: relative;
@@ -424,8 +455,8 @@ a{
 			float: left;
 			display: block;
 			width: 127px;
-			height: 33px;
-			padding-top: 11px;
+			height: 37px;
+			padding-top: 7px;
 			text-align: center;
 			font: 18px 'OpenSans-l';
 			color: white;
@@ -438,13 +469,15 @@ a{
 		.likes-number{
 			float: right;
 			width: 91px;
-			height: 31px;
-			padding-top: 13px;
+			height: 34px;
+			padding-top: 10px;
 			@include background-image(linear-gradient(top, #e1e1e1, #fefefe));
 			font: 18px 'OpenSans-b';
 			color: #6d6560;
 			i{
-				float: left;
+				position: absolute;
+				right: 70px;
+				top: 16px;
 				margin-left: 11px;
 				@include sized-sprite($icons, star);
 			}
@@ -454,3 +487,48 @@ a{
 		}
 	}
 }
+.big-photo{
+		position: relative;
+		// overflow: hidden;
+		width: 636px;
+		height: 438px;
+		padding: 10px;
+		background: url(../img/fon.png);
+		@include border-radius(10px);
+		@include box-shadow(0 0px 12px #ccc);
+		i{
+			display: block;
+			position: absolute;
+			bottom: 10px;
+			left: 40%;
+			@include sized-sprite($icons, logo);
+		}
+		.top{
+			display: block;
+			position: absolute;
+			top:2px;
+			left: 26px;
+			@include sized-sprite($icons, big-b-top);	
+		}
+		.right{
+			display: block;
+			position: absolute;
+			top: 20px;
+			right: 7px;
+			@include sized-sprite($icons, big-b-right);	
+		}
+		.bot{
+			display: block;
+			position: absolute;
+			bottom: 14px;
+			left: 5px;
+			@include sized-sprite($icons, big-b-bot);	
+		}
+		.left{
+			display: block;
+			position: absolute;
+			top: 8px;
+			left: 8px;
+			@include sized-sprite($icons, big-b-left);	
+		}
+	}
