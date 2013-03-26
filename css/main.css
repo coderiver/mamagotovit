@@ -14,8 +14,8 @@
 
 .mega-prize { position: relative; float: left; overflow: hidden; width: 393px; height: 398px; }
 .mega-prize h3 { text-align: center; margin-bottom: 40px; font: 24px "OpenSans-b"; color: #3c7ab1; }
-.mega-prize .mega-prize__item { float: left; width: 160px; margin: 3px 0px 0px -4px; }
-.mega-prize .mega-prize__item p { width: 102px; font: bold 14px "OpenSans-l"; color: #3c7ab1; }
+.mega-prize .mega-prize__item { float: left; width: 160px; margin: 3px 0px 0px -1px; }
+.mega-prize .mega-prize__item p { width: 102px; text-align: center; font: bold 14px "OpenSans-l"; color: #3c7ab1; }
 .mega-prize .mega-prize__item_left { position: absolute; top: 73px; left: 222px; width: 160px; }
 .mega-prize .mega-prize__item_left p { width: 102px; margin-left: 46px; text-align: center; font: bold 14px "OpenSans-l"; color: #3c7ab1; }
 .mega-prize .mega-prize__item_mid { position: absolute; bottom: 18px; left: 114px; }
