@@ -1,0 +1,207 @@
+@import "base"
+//main styles
+//main-action
+.main-action
+	position: relative
+	width: 530px
+	height: 350px
+	padding-top: 75px
+	.h1
+		margin-bottom: 20px
+		line-height: 1.3
+	p
+		margin-bottom: 25px
+		font-size: 24px
+		color: #3f3f3f
+.main-action__pic-1, .main-action__pic-2, .main-action__pic-3
+	position: absolute	
+	img
+		display: block
+		border: 2px solid #fff
+		@include border-radius(10px)
+		@include box-shadow(0 3px 3px #ccc)
+.main-action__pic-1
+	top: 90px
+	right: -325px
+	z-index: 3
+.main-action__pic-2
+	top: 140px
+	right: -470px
+	+rotate(-10)
+	z-index: 2
+.main-action__pic-3
+	top: 40px
+	right: -430px
+	+rotate(9)
+	z-index: 1
+//prizes
+.prizes
+	margin-bottom: 35px
+	padding: 30px 0
+	background: url(../img/helpers-bg.jpg)
+	color: $blue
+	.h2
+		margin-bottom: 35px
+		text-align: center
+	ul
+		font-size: 0		
+	li
+		position: relative
+		display: inline-block
+		width: 295px
+		height: 400px
+		vertical-align: top
+		.prizes__by-title
+			right: 5px
+		.prizes__by		
+			top: 50px
+			left: 200px
+			z-index: 3 
+		&:first-child
+			width: 410px
+			.prizes__by-title
+				left: 139px
+			.prizes__by		
+				top: 80px
+				left: 155px
+	.prizes__by-title
+		position: absolute
+		top: 40px
+		font-size: 18px
+		font-weight: 700
+		text-shadow: #fff 2px 0px 1px, #fff 2px 2px 1px, #fff 0px 2px 1px, #fff -2px 2px 1px, #fff -2px 0px 1px, #fff -2px -2px 1px, #fff 0px -2px 1px, #fff 2px -2px 1px, rgba(0,0,0,0.75) 3px 3px 8px
+		z-index: 5 
+	.prizes__title
+		text-align: center
+		font-size: 24px
+	.prizes__by, .prizes__item
+		position: absolute
+		img
+			display: block
+			+border-radius(50%)
+			border: 1px solid #ccb59a				
+	.prizes__by		
+		width: 70px
+		height: 70px
+		img
+			+box-shadow(rgba(0,0,0,0.24) 4px 4px 9px)				
+	.prizes__item
+		position: absolute
+		width: 150px
+		height: 150px
+		span
+			position: absolute
+			top: 160px
+			width: 140px
+			text-align: center
+			font-size: 14px
+			line-height: 1.3
+	.prizes__item-1, .prizes__item-2
+		top: 70px
+	.prizes__item-1
+		top: 70px
+		left: 0
+		span
+			left: -15px
+	.prizes__item-2
+		left: 230px
+		span
+			left: 40px
+	.prizes__item-3
+		top: 160px
+		left: 115px
+		span
+			left: 7px
+	.prizes__item-4
+		top: 60px
+		left: 50%
+		width: 216px
+		height: 216px
+		margin-left: -108px 
+		span
+			top: 240px
+			left: 7px
+			width: 100%
+			font-size: 18px
+		strong
+			display: block
+//participants
+.participants
+	margin-bottom: 15px
+	.h2
+		margin-bottom: 20px
+		text-align: center
+	ul
+		font-size: 0
+		text-align: center
+	li
+		display: inline-block
+		vertical-align: top
+		width: 300px
+		padding: 0 10px
+		margin-bottom: 40px
+.participants__pic
+	position: relative
+	height: 240px
+	margin-bottom: 5px
+	+border-radius(10px)
+	+box-shadow(0 0px 12px #cccccc)
+	img
+		position: relative
+		top: 9px
+		left: 0	
+.participants__pic-out
+	position: absolute
+	top: 7px
+	left: 7px
+	width: 285px
+	height: 205px
+	background: url(../img/out-bg.png) no-repeat
+.participants__logo
+	position: absolute
+	top: 187px
+	left: 105px
+	+sized-sprite($icons, logo-s)
+.participants__info
+	font-size: 18px
+	text-align: center
+	a
+		color: #7a7a7a 
+		&:hover
+			text-decoration: underline
+	p
+		margin: 5px 0
+		color: #282828 
+.participants__vote
+	display: inline-block
+	+box-shadow(0 3px 3px #ccc)	
+	+border-radius(21px)
+	overflow: hidden
+	a, strong
+		float: left
+	a
+		padding: 0 8px 0 18px
+		color: #fff
+		+border-radius(0px)
+		&:hover
+			text-decoration: none
+	strong
+		position: relative
+		height: 42px
+		padding: 0 14px 0 34px
+		line-height: 42px
+		+background-image(linear-gradient(top, #e1e1e1, #fff))
+		color: $brown
+		&:before
+			content: ""
+			position: absolute
+			top: 14px
+			left: 11px
+			+sized-sprite($icons, star)
+.more
+	height: 22px
+	margin-bottom: 45px
+	border-bottom: 1px solid #d0d0d0 
+	text-align: center
+	.btn
+		padding: 0 23px

@@ -1,0 +1,112 @@
+<!doctype html>
+<!--[if lte IE 8]><html lang="ru-RU" class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/datepicker.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN .wrap -->
+<section class="wrap">
+	<!-- BEGIN .header -->
+	<header class="header header">
+		<a class="tema-link" href="#">Мамам от тёма</a>
+		<a class="recipe-link" href="#"><span>Подбери рецепт</span></a>
+		<div class="container">
+			<a class="logo" href="#">
+				<span class="logo__name">Мама готовит</span>
+				<span class="logo__desc">на главную</span>
+			</a>
+			<nav class="nav">
+				<ul>
+					<li><a class="nav__item-1" href="#">Рецепты<i></i></a></li>
+					<li><a class="nav__item-2" href="#">Всё<br>о питании<i></i></a></li>
+					<li><a class="nav__item-3" href="#">Советы специалистов<span>2</span><i></i></a></li>
+					<li><a class="nav__item-4" href="#">О Тёме<i></i></a></li>
+					<li class="active">
+						<a class="nav__item-5" href="#">Конкурс<i></i></a>
+						<div class="nav__sub">
+							<ul>
+								<li><a href="#">Участники</a></li>
+								<li><a href="#">Призы</a></li>
+								<li><a href="#">О конкурсе</a></li>
+								<li class="active"><a href="#">Твоя работа</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<div class="login">
+				<a href="#">
+					<img src="img/user.jpg" alt="">
+					<span>Владимир Бабичевырвы</span>
+				</a>
+			</div>
+			<div class="link-recipe"></div>
+		</div>		
+	</header>
+	<!-- END .header -->
+	<section class="container">
+		<!-- BEGIN .work -->
+		<form class="work">
+			<div class="work__photo work__photo_loaded">
+				<img src="img/pic5.jpg" alt="">
+				<div class="work__photo-out"></div>
+				<div class="work__logo"></div>
+			</div>
+			<div class="work__detail">
+				<textarea placeholder="Опиши фото"></textarea>
+				<div class="work__age">
+					<strong>Твоему малышу:</strong>
+					<div class="work__select">
+						<span>выбери возраст</span>
+					</div>
+				</div>
+			</div>
+			<div class="work__btn">
+				<input class="btn" type="submit" value="Опубликовать">
+			</div>
+		</form>
+		<!-- END .work -->
+	</section>
+	<div class="push"></div>
+</section>
+<!-- END .wrap -->
+<!-- BEGIN .footer -->
+<footer class="footer">
+	<div class="container">
+		<div class="footer__col">
+			<div class="footer__factory">
+				<a href="#">Хочешь на завод Тёма?</a>
+			</div>			
+		</div>
+		<div class="footer__col">
+			<div class="footer__contacts">
+				<strong>Спроси педиатра</strong>
+				<p>Звони бесплатно Пн-ПТ 8.00-20.00</p>
+				<span>0 800 501 625</span>
+			</div>			
+		</div>
+	</div>
+	<div class="footer__info">
+		<a class="footer__company" href="#"></a>
+		<div class="footer__social">
+			<span>Наши группы:</span>
+			<a class="footer__fb" href="#"></a>
+			<a class="footer__vk" href="#"></a>
+		</div>
+	</div>
+	<div class="footer__langs">
+		<a href="#">Укр</a>
+		<a class="active" href="#">Рус</a>
+	</div>
+</footer>
+<!-- END .footer -->
+</body>
+</html>

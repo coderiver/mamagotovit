@@ -1,0 +1,50 @@
+@import "compass/css3"
+//variables
+$blue: #2c6aa7
+$hover: #ffc979
+$brown: #6d6560
+// gradients for ie
+$experimental-support-for-svg: true
+// global sprites
+$icons: sprite-map("icons/*.png", $spacing: 10px)
+//extends
+%clr
+  &:after
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+%hide-text
+  font: 0/0 a
+  text-shadow: none
+  color: transparent
+//mixins
+@mixin rotate($deg: 0) 
+  -moz-transform: rotate($deg+ deg)
+  -o-transform: rotate($deg+ deg)
+  -webkit-transform: rotate($deg+ deg)
+  -ms-transform: rotate($deg+ deg)
+  transform: rotate($deg+ deg)
+
+@mixin matrix($m1, $m2, $m3, $m4, $m5, $m6)
+  -moz-transform: matrix($m1, $m2, $m3, $m4, $m5, $m6)
+  -webkit-transform: matrix($m1, $m2, $m3, $m4, $m5, $m6)
+  -o-transform: matrix($m1, $m2, $m3, $m4, $m5, $m6)
+  -ms-transform: matrix($m1, $m2, $m3, $m4, $m5, $m6)
+
+@mixin image-size($path)
+  width: image-width($path)
+  height: image-height($path)
+  
+@mixin sized-sprite($map, $sprite)
+  background: sprite($map, $sprite) no-repeat
+  @include image-size(sprite-file($map, $sprite))
+  
+
+
+
+
+	
+
+		
