@@ -41,6 +41,17 @@ $icons: sprite-map("icons/*.png", $spacing: 10px)
   background: sprite($map, $sprite) no-repeat
   @include image-size(sprite-file($map, $sprite))
   
+@mixin transition($what: all, $length: 1s, $easing: ease-in-out)
+  -moz-transition: $what $length $easing
+  -o-transition: $what $length $easing
+  -webkit-transition: $what $length $easing
+  -ms-transition: $what $length $easing
+  transition: $what $length $easing
+//respond
+@mixin respond-to($media) 
+  @if $media == step1
+    @media only screen and (max-width: 1260px)
+      @content
 
 
 

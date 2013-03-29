@@ -89,13 +89,14 @@
 	position: relative
 	span
 		position: relative
+		display: inline-block
 		color: $blue
 		border-bottom: 1px dashed $blue 
 		cursor: pointer
 		&:after
 			content: ""
 			position: absolute
-			top: 9px
+			top: 6px
 			right: -15px
 			+sized-sprite($icons, arr1)
 	select
@@ -419,6 +420,7 @@
 .advert_participate
 	.advert__title
 		float: left
+		margin-left: 25px
 		font-size: 32px
 		p
 			margin-bottom: 10px
@@ -426,7 +428,9 @@
 			font-weight: normal
 	.btn
 		float: right
-		margin: 20px 25px 0 0
+		height: 50px
+		margin: 15px 25px 0 0		
+		line-height: 50px
 .advert_winner
 	padding: 20px 25px 20px 15px
 	img
@@ -443,3 +447,75 @@
 	.btn
 		float: right
 		margin-top: 10px
+//instr
+.instr
+	margin-bottom: 65px
+	.h2
+		margin-bottom: 35px
+		text-align: center
+	ul
+		overflow: hidden
+	li
+		float: left
+		width: 330px
+		height: 261px
+		margin-left: 5px
+		&:first-child
+			margin: 0
+.instr__photo
+	background: url(../img/in1.png) no-repeat 
+	span, strong
+		display: block
+		text-align: center
+		font-size: 32px
+		color: $brown
+	strong
+		padding: 90px 0 10px 0
+.instr__social
+	background: url(../img/in2.png) no-repeat
+	p
+		padding: 80px 0 10px 0
+		font-size: 22px
+		text-align: center
+		color: $brown
+	span
+		display: block
+		text-align: center
+		font-size: 0
+		i
+			display: inline-block
+			padding: 0 6px
+	.instr__vk
+		+sized-sprite($icons, s-vk)
+	.instr__ok
+		+sized-sprite($icons, s-ok)
+	.instr__fb
+		+sized-sprite($icons, s-fb)
+.instr__friend
+	background: url(../img/in3.png) no-repeat 
+	p
+		text-align: center
+		color: $brown
+		font-size: 18px
+		&:first-child
+			padding: 70px 0 20px 0
+			font-size: 22px
+		span
+			font-size: 32px
+			color: $blue
+			font-weight: bold  
+//load-rules
+.load-rules
+	padding: 40px 0
+	a
+		position: relative
+		padding-left: 75px
+		color: $blue
+		font-size: 16px
+		&:before
+			content: ""
+			position: absolute
+			top: -10px
+			left: 25px
+			+sized-sprite($icons, load)
+		

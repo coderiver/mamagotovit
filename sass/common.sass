@@ -64,16 +64,18 @@ table
 	background: url(../img/nav-bg.jpg) repeat-x
 	.container
 		overflow: hidden
-.tema-link, .recipe-link
+		+transition(padding-left, 0.3s, linear)
+		+respond-to(step1)
+			padding-left: 130px
+.tema-link
 	position: absolute
 	top: 0	
-.tema-link
 	left: 0
 	+sized-sprite($icons, tema-logo)
 	@extend %hide-text
 	z-index: 10 
 .recipe-link
-	right: 30px
+	float: right
 	+sized-sprite($icons, recipe)
 	span
 		display: block
@@ -236,12 +238,12 @@ table
 		height: 88px
 		padding-top: 11px
 		color: #fff
+		&:hover
+			color: $hover
 	img
 		+border-radius(50%)
 	span
-		font-size: 12px		
-		&:hover
-			color: $hover
+		font-size: 12px				
 //footer
 .footer
 	position: relative
@@ -411,3 +413,19 @@ table
 		padding: 0 23px
 .loader
 	text-align: center
+//text
+.text
+	padding: 30px 0
+	.h2
+		margin-bottom: 35px
+		text-align: center
+	p, li
+		margin-bottom: 15px
+		font-size: 18px
+		color: #3f3f3f
+		line-height: 1.4
+		text-align: left
+	ol, ul
+		padding: 0 25px
+	li
+		list-style: decimal 

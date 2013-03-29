@@ -12,6 +12,7 @@
 .main-action__pic-3 { top: 40px; right: -430px; -moz-transform: rotate(9deg); -o-transform: rotate(9deg); -webkit-transform: rotate(9deg); -ms-transform: rotate(9deg); transform: rotate(9deg); z-index: 1; }
 
 .prizes { margin-bottom: 35px; padding: 30px 0; background: url(../img/yellow-bg.jpg); color: #2c6aa7; }
+.prizes .text { padding: 30px 0 60px 0; }
 .prizes .h2 { margin-bottom: 35px; text-align: center; }
 .prizes .prizes__list { font-size: 0; }
 .prizes .prizes__item { position: relative; display: inline-block; width: 295px; vertical-align: top; }
@@ -40,8 +41,7 @@
 .prizes .prizes__subject-4 span { top: 240px; left: 7px; width: 100%; font-size: 18px; }
 .prizes .prizes__subject-4 strong { display: block; }
 
-.prizes_mod { background: none; text-align: center; }
-.prizes_mod .prisez__txt { margin-bottom: 60px; font-size: 18px; color: #3f3f3f; line-height: 1.4; }
+.prizes_mod { padding: 0 0 30px 0; background: none; text-align: center; }
 .prizes_mod .prizes__item { margin: 0 75px; }
 .prizes_mod .prizes__item_mod { margin: 60px 75px 0 75px; }
 .prizes_mod .prizes__item_mod .prizes__by-title { text-align: left; }
@@ -61,7 +61,7 @@
 
 .participants__pic-out { position: absolute; top: 7px; left: 7px; width: 285px; height: 205px; background: url(../img/out-bg.png) no-repeat; }
 
-.participants__logo { position: absolute; top: 187px; left: 105px; background: url('../img/icons-s871d9f6792.png') 0 -372px no-repeat; width: 81px; height: 48px; }
+.participants__logo { position: absolute; top: 187px; left: 105px; background: url('../img/icons-sfb58499c2c.png') 0 -372px no-repeat; width: 81px; height: 48px; }
 
 .participants__info { font-size: 18px; text-align: center; }
 .participants__info a { color: #7a7a7a; }
