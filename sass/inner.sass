@@ -8,6 +8,8 @@
 	border: 1px solid #e1dbdb
 	background: #fff
 	+border-radius( 0 0 10px 10px)
+	.advert
+		margin: 0 -26px 20px -26px
 .work__photo
 	position: relative
 	height: 460px
@@ -84,6 +86,7 @@
 		color: $brown
 		font-weight: 700  
 .work__select
+	position: relative
 	span
 		position: relative
 		color: $blue
@@ -95,7 +98,336 @@
 			top: 9px
 			right: -15px
 			+sized-sprite($icons, arr1)
+	select
+		position: absolute
+		top: 0
+		left: 0		
+		width: 112px
+		height: 20px
+		opacity: 0
+		filter: alpha(opacity=0)
+		cursor: pointer 
 .work__btn
 	text-align: center
 	input
 		cursor: pointer
+.work__user
+	position: relative
+	margin-bottom: 30px
+	overflow: hidden
+.work__desc
+	margin-bottom: 10px
+	font-size: 18px
+	font-weight: 700 
+	color: #3a3a3a
+.work__user-info
+	float: left
+	width: 155px
+	img
+		float: left
+		margin-right: 8px
+		border: 1px solid #c9d4e5
+	span
+		font-size: 13px
+		color: #3a3a3a
+		line-height: 1.2
+.work__user-rate
+	float: right
+	text-align: right
+	p
+		padding-top: 10px
+		font-size: 16px
+		color: #3a3a3a
+	span
+		font-weight: 700 
+	.vote
+		position: absolute
+		top: 0
+		right: 2px
+//comments
+.comm
+	margin: 0 -5px
+.comm__title
+	margin-bottom: 15px
+	font-size: 18px
+	color: #74592b
+	font-weight: 700
+.comm__item
+	padding: 20px 0
+	border-top: 1px solid #ddd 
+	overflow: hidden
+.comm__item_add
+	padding: 0
+	border: none
+.comm__user-pic
+	float: left
+	img
+		display: block
+		border: 1px solid #c9d4e5
+.comm__info
+	float: right
+	width: 610px
+	textarea
+		display: block
+		width: 594px
+		height: 40px
+		padding: 5px 7px
+		border: 1px solid #e3dddd
+		+border-radius(10px)
+		font-family: Arial, Tahoma, sans-serif 
+		font-size: 12px
+		font-style: italic
+	p
+		padding-right: 35px
+		font-family: Arial, Tahoma, sans-serif 
+		font-size: 12px
+		color: #3f3f3f
+		line-height: 1.3
+.comm__detail
+	margin-bottom: 10px
+	font-family: Arial, Tahoma, sans-serif 
+	font-size: 11px
+	overflow: hidden
+	a
+		float: left
+		font-weight: bold 
+		color: #3a3a3a
+	strong
+		float: right
+		color: #919191
+.comm__btn
+	padding: 10px 0
+	overflow: hidden
+	input
+		float: right
+		height: 35px
+		padding: 0 20px
+		line-height: 35px
+		font-size: 16px
+		cursor: pointer
+.back
+	position: absolute
+	top: 30px
+	left: 0
+	height: 35px
+	padding: 0 15px 0 20px
+	line-height: 35px
+	font-size: 16px
+	+border-radius(18px 8px 8px 18px)
+//addition
+.addition
+	position: absolute
+	top: 95px
+	right: -60px
+	width: 190px
+.share	
+	margin-bottom: 40px
+	a
+		position: relative
+		display: block
+		margin-bottom: 8px
+		padding: 9px 0 9px 60px		
+		font-size: 13px
+		line-height: 1.3
+		color: $blue
+	i
+		position: absolute
+		top: 0
+		left: 0 
+.share__vk
+	i
+		+sized-sprite($icons, s-vk)
+	&:hover
+		i
+			+sized-sprite($icons, s-vk-h)
+.share__ok
+	i
+		+sized-sprite($icons, s-ok)
+	&:hover
+		i
+			+sized-sprite($icons, s-ok-h)
+.share__fb
+	i
+		+sized-sprite($icons, s-fb)
+	&:hover
+		i
+			+sized-sprite($icons, s-fb-h)		
+.share__title
+	margin-bottom: 12px 
+	font-weight: bold
+	letter-spacing: -1px
+	font-size: 16px
+	color: #74592b 
+.addition__advert
+	width: 135px
+	margin-bottom: 30px
+	padding: 10px
+	background: url(../img/paper.jpg) no-repeat
+	+box-shadow(rgba(0,0,0,0.2) 0 0 5px)
+	+border-radius(2px) 
+	img
+		display: block
+		margin-bottom: 5px 
+	p
+		margin-bottom: 10px
+		text-align: center
+		color: $brown
+		font-size: 13px
+	.btn
+		display: block
+		padding: 0
+		height: 35px
+		line-height: 35px
+		text-align: center
+		font-size: 16px
+.addition_recipe
+	width: 135px
+	border-top: 1px solid #ddd 
+	padding: 15px 10px 0 10px
+	strong
+		font-size: 16px
+		color: #74592b
+	img
+		display: block
+		margin: 10px 0
+		+border-radius(3px)
+		border: 1px solid #d6d6d6
+	a
+		font-size: 16px
+		color: $blue
+	span
+		display: block
+		margin-top: 5px
+		font-size: 13px
+		color: #7b7b7b 
+.winners
+	background: url(../img/yellow-bg.jpg)
+	.h2
+		padding: 30px 0 
+		text-align: center
+		font-weight: 400 
+	.participants
+		margin: 0
+	.vote_done
+		a
+			font-weight: 700 
+//advert
+.advert
+	padding: 20px 43px 20px 33px	
+	background: url(../img/yellow-bg.jpg)
+	+box-shadow(rgba(0,0,0,0.32) 0 0 4px inset)
+	overflow: hidden
+.advert-title
+	font-size: 20px
+	color: $brown
+	font-weight: 700 
+.advert_bonus
+	.advert-title
+		float: left
+		width: 360px		
+	a
+		position: relative
+		float: right
+		padding: 0 105px 0 30px
+	span 
+		position: absolute
+		top: 3px
+		right: 20px
+		padding-left: 15px
+		border-left: 1px solid #518bc3 
+		font-size: 22px
+		font-weight: 700
+		text-align: center
+		line-height: 1
+	i
+		display: block
+		font-style: normal
+		font-weight: 400 
+		font-size: 13px 
+.advert_prizes, .advert_winner, .advert_prizes-mod	
+	.btn
+		height: 50px
+		padding: 0 15px
+		line-height: 50px
+		font-size: 21px
+	img
+		+border-radius(50%)
+		border: 1px solid #cab397
+.advert_prizes, .advert_prizes-mod	
+	ul	
+		font-size: 0		
+	li
+		display: inline-block
+		padding: 0 15px
+.advert_prizes
+	text-align: center
+	.advert-title
+		margin-bottom: 20px
+	ul
+		margin-bottom: 20px
+	strong
+		display: block
+		margin-top: 10px
+		font-size: 16px
+		color: $blue	
+.advert_prizes-mod, .advert_date
+	+box-shadow(none)
+	margin-bottom: 50px
+.advert_prizes-mod
+	.container
+		overflow: hidden
+	.advert-title
+		float: left
+		width: 325px
+		margin: 25px 0 0 25px
+		font-size: 18px
+		line-height: 1.4
+	ul
+		float: left
+		margin-bottom: 10px
+	li
+		float: left
+		padding: 0 10px
+		text-align: center
+	strong
+		display: block
+		margin-top: 10px
+		font-size: 16px
+		color: $blue	
+	.advert-right
+		float: right
+		width: 200px
+		margin-right: 25px
+		text-align: center
+		strong
+			display: block
+			padding: 10px 0
+			font-size: 20px
+			color: $brown
+.advert_date
+	padding: 30px 0
+	.advert-title
+		p
+			padding: 5px 0
+			text-align: center
+			font-size: 29px
+			font-weight: normal
+		span
+			font-weight: 700
+			color: #dc5c6c 
+.advert_winner
+	padding: 20px 25px 20px 15px
+	img
+		float: left
+		margin-right: 15px
+	.advert-title
+		float: left
+		padding-top: 10px
+		font-size: 24px
+		p
+			margin-top: 5px
+			font-size: 21px
+			font-weight: normal
+	.btn
+		float: right
+		margin-top: 10px

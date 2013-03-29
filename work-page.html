@@ -1,0 +1,289 @@
+<!doctype html>
+<!--[if lte IE 8]><html lang="ru-RU" class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/datepicker.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN .wrap -->
+<section class="wrap">
+	<!-- BEGIN .header -->
+	<header class="header header">
+		<a class="tema-link" href="#">Мамам от тёма</a>
+		<a class="recipe-link" href="#"><span>Подбери рецепт</span></a>
+		<div class="container">
+			<a class="logo" href="#">
+				<span class="logo__name">Мама готовит</span>
+				<span class="logo__desc">на главную</span>
+			</a>
+			<nav class="nav">
+				<ul>
+					<li><a class="nav__item-1" href="#">Рецепты<i></i></a></li>
+					<li><a class="nav__item-2" href="#">Всё<br>о питании<i></i></a></li>
+					<li><a class="nav__item-3" href="#">Советы специалистов<span>2</span><i></i></a></li>
+					<li><a class="nav__item-4" href="#">О Тёме<i></i></a></li>
+					<li class="active">
+						<a class="nav__item-5" href="#">Конкурс<i></i></a>
+						<div class="nav__sub">
+							<ul>
+								<li><a href="#">Участники</a></li>
+								<li><a href="#">Призы</a></li>
+								<li><a href="#">О конкурсе</a></li>
+								<li class="active"><a href="#">Твоя работа</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<div class="login">
+				<a href="#">
+					<img src="img/user.jpg" alt="">
+					<span>Владимир Бабичевырвы</span>
+				</a>
+			</div>
+			<div class="link-recipe"></div>
+		</div>		
+	</header>
+	<!-- END .header -->
+	<section class="container container_rel">
+		<a class="btn back" href="#">Назад</a>
+		<!-- BEGIN .addition -->
+		<div class="addition">
+			<div class="share">
+				<div class="share__title">Понравилось фото?</div>
+				<a class="share__vk" href="#"><i></i>Отправить в Вконтакте</a>
+				<a class="share__ok" href="#"><i></i>Отправить в Одноклассники</a>
+				<a class="share__fb" href="#"><i></i>Отправить в Facebook</a>
+			</div>
+			<div class="addition__advert">
+				<a href="#"><img src="img/pic8.jpg" alt=""></a>
+				<p>Поделись фото забавной трапезы малыша и выиграй <strong>потрясающие призы!</strong></p>
+				<a class="btn" href="#">Узнать больше</a>
+			</div>
+			<div class="addition_recipe">
+				<strong>Рецепт для твоего малыша</strong>
+				<a href="#"><img src="img/pic8.jpg" alt=""></a>
+				<a href="#">Запеченая картошка с маслом</a>
+				<span>Возраст: 9 месяцев</span>
+			</div>
+		</div>
+		<!-- END .addition -->
+		<!-- BEGIN .work -->
+		<div class="work">
+			<div class="work__photo work__photo_loaded">
+				<img src="img/pic5.jpg" alt="">
+				<div class="work__photo-out"></div>
+				<div class="work__logo"></div>
+			</div>	
+			<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->		
+			<div class="work__user">
+				<div class="work__desc">Сына любит кушать</div>				
+				<div class="work__user-info">
+					<a href="#">
+						<img src="img/user1.jpg" alt="">
+						<span>Владимир Бабичев</span>
+					</a>
+				</div>
+				<div class="work__user-rate">
+					<div class="vote vote_value">
+						<a class="btn" href="#">Голосовать</a>
+						<strong>4265</strong>
+					</div>
+					<p>Ты на <span>4325</span> месте</p>
+				</div>
+			</div>
+			<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->		
+			<div class="work__user">
+				<div class="work__desc">Сына любит кушать</div>				
+				<div class="work__user-info">
+					<a href="#">
+						<img src="img/user1.jpg" alt="">
+						<span>Владимир Бабичев</span>
+					</a>
+				</div>
+				<div class="work__user-rate">
+					<p>Голосование окончено</p>
+				</div>
+			</div>
+			<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->			
+			<div class="work__user">
+				<div class="work__desc">Сына любит кушать</div>				
+				<div class="work__user-info">
+					<a href="#">
+						<img src="img/user1.jpg" alt="">
+						<span>Владимир Бабичев</span>
+					</a>
+				</div>
+				<div class="work__user-rate">
+					<div class="vote">
+						<a class="btn" href="#">Голосовать</a>
+						<strong>425</strong>
+					</div>
+				</div>
+			</div>
+			<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->		
+			<div class="work__user">
+				<div class="work__desc">Сына любит кушать</div>				
+				<div class="work__user-info">
+					<a href="#">
+						<img src="img/user1.jpg" alt="">
+						<span>Владимир Бабичев</span>
+					</a>
+				</div>
+				<div class="work__user-rate">
+					<div class="vote vote_done">
+						<a class="btn" href="#">Спасибо</a>
+						<strong>425</strong>
+					</div>
+				</div>
+			</div>
+			<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->	
+			<div class="advert advert_bonus">
+				<div class="advert-title">Получи дополнительные баллы - пригласи друзей участвовать</div>
+				<a class="btn" href="#">Пригласить<span>+5<i>баллов</i></span></a>
+			</div>
+			<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->	
+			<div class="advert advert_prizes">
+				<div class="advert-title">Поделись фото самой забавной трапезы твоего малыша и выиграй потрясающие призы!</div>
+				<ul>
+					<li>
+						<img src="img/pic6.jpg" alt="">
+						<strong>Суперприз</strong>	
+					</li>
+					<li>
+						<img src="img/pic6.jpg" alt="">
+						<strong>4 мультиварки</strong>	
+					</li>
+					<li>
+						<img src="img/pic6.jpg" alt="">
+						<strong>36 блендеров</strong>	
+					</li>
+				</ul>
+				<a class="btn" href="#">Опубликуй фото</a>
+			</div>
+			<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->	
+			<div class="advert advert_winner">
+				<img src="img/pic7.jpg" alt="">
+				<div class="advert-title">Этот участник выиграл приз!<p>Хочешь выиграть приз?</p></div>
+				<a class="btn" href="#">Опубликуй фото</a>
+			</div>
+			<form class="comm" action="">
+				<div class="comm__title">Комментарии:</div>
+				<div class="comm__item comm__item_add">
+					<div class="comm__user-pic">
+						<a href="#"><img src="img/user2.jpg" alt=""></a>
+					</div>
+					<div class="comm__info">
+						<div class="comm__detail">
+							<a href="#">Ketrin </a><strong>11 февраля 2013, 22:54</strong>
+						</div>
+						<textarea placeholder="Добавьте мнение"></textarea>
+					</div>
+				</div>
+				<div class="comm__btn">
+					<input class="btn" type="submit" value="Добавить">
+				</div>
+				<div class="comm__item">
+					<div class="comm__user-pic">
+						<a href="#"><img src="img/user2.jpg" alt=""></a>
+					</div>
+					<div class="comm__info">
+						<div class="comm__detail">
+							<a href="#">Ketrin </a><strong>11 февраля 2013, 22:54</strong>
+						</div>
+						<p>В кастрюлю добавить морковное пюре, специи, соль по вкусу. Оставить кипеть на медленном огне еще 15 минут. Перед подачей в тарелку сначала выкладывается грудинка, затем наливается суп. Суп подается с зернистой горчицей, чтобы каждый обедающий мог размешать ее в супе или брать по чуть-чуть во время еды. Приятного аппетита!</p>
+					</div>
+				</div>
+				<div class="comm__item">
+					<div class="comm__user-pic">
+						<a href="#"><img src="img/user2.jpg" alt=""></a>
+					</div>
+					<div class="comm__info">
+						<div class="comm__detail">
+							<a href="#">Ketrin </a><strong>11 февраля 2013, 22:54</strong>
+						</div>
+						<p>В кастрюлю добавить морковное пюре, специи, соль по вкусу. Оставить кипеть на медленном огне еще 15 минут. Перед подачей в тарелку сначала выкладывается грудинка, затем наливается суп. Суп подается с зернистой горчицей, чтобы каждый обедающий мог размешать ее в супе или брать по чуть-чуть во время еды. Приятного аппетита!</p>
+					</div>
+				</div>
+				<div class="comm__item">
+					<div class="comm__user-pic">
+						<a href="#"><img src="img/user2.jpg" alt=""></a>
+					</div>
+					<div class="comm__info">
+						<div class="comm__detail">
+							<a href="#">Ketrin </a><strong>11 февраля 2013, 22:54</strong>
+						</div>
+						<p>В кастрюлю добавить морковное пюре, специи, соль по вкусу. Оставить кипеть на медленном огне еще 15 минут. Перед подачей в тарелку сначала выкладывается грудинка, затем наливается суп. Суп подается с зернистой горчицей, чтобы каждый обедающий мог размешать ее в супе или брать по чуть-чуть во время еды. Приятного аппетита!</p>
+					</div>
+				</div>
+				<div class="comm__item">
+					<div class="comm__user-pic">
+						<a href="#"><img src="img/user2.jpg" alt=""></a>
+					</div>
+					<div class="comm__info">
+						<div class="comm__detail">
+							<a href="#">Ketrin </a><strong>11 февраля 2013, 22:54</strong>
+						</div>
+						<p>В кастрюлю добавить морковное пюре, специи, соль по вкусу. Оставить кипеть на медленном огне еще 15 минут. Перед подачей в тарелку сначала выкладывается грудинка, затем наливается суп. Суп подается с зернистой горчицей, чтобы каждый обедающий мог размешать ее в супе или брать по чуть-чуть во время еды. Приятного аппетита!</p>
+					</div>
+				</div>
+				<div class="comm__item">
+					<div class="comm__user-pic">
+						<a href="#"><img src="img/user2.jpg" alt=""></a>
+					</div>
+					<div class="comm__info">
+						<div class="comm__detail">
+							<a href="#">Ketrin </a><strong>11 февраля 2013, 22:54</strong>
+						</div>
+						<p>В кастрюлю добавить морковное пюре, специи, соль по вкусу. Оставить кипеть на медленном огне еще 15 минут. Перед подачей в тарелку сначала выкладывается грудинка, затем наливается суп. Суп подается с зернистой горчицей, чтобы каждый обедающий мог размешать ее в супе или брать по чуть-чуть во время еды. Приятного аппетита!</p>
+					</div>
+				</div>	
+				<div class="loader">
+					<img src="img/loader.png" alt="">
+				</div>			
+			</form>
+		</div>
+		<!-- END .work -->
+	</section>
+	<div class="push"></div>
+</section>
+<!-- END .wrap -->
+<!-- BEGIN .footer -->
+<footer class="footer">
+	<div class="container">
+		<div class="footer__col">
+			<div class="footer__factory">
+				<a href="#">Хочешь на завод Тёма?</a>
+			</div>			
+		</div>
+		<div class="footer__col">
+			<div class="footer__contacts">
+				<strong>Спроси педиатра</strong>
+				<p>Звони бесплатно Пн-ПТ 8.00-20.00</p>
+				<span>0 800 501 625</span>
+			</div>			
+		</div>
+	</div>
+	<div class="footer__info">
+		<a class="footer__company" href="#"></a>
+		<div class="footer__social">
+			<span>Наши группы:</span>
+			<a class="footer__fb" href="#"></a>
+			<a class="footer__vk" href="#"></a>
+		</div>
+	</div>
+	<div class="footer__langs">
+		<a href="#">Укр</a>
+		<a class="active" href="#">Рус</a>
+	</div>
+</footer>
+<!-- END .footer -->
+</body>
+</html>

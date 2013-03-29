@@ -45,6 +45,8 @@ table
 .container
 	width: 1000px
 	margin: 0 auto
+.container_rel
+	position: relative
 .push
 	height: 167px
 	clear: both
@@ -181,6 +183,7 @@ table
 				height: auto
 				background: none
 				a					 
+					color: $brown
 					&:before
 						content: ""
 						position: absolute
@@ -357,4 +360,54 @@ table
 	+border-radius(5px)
 	font-size: 20px
 	color: $blue
-	
+//vote
+.vote
+	display: inline-block
+	+box-shadow(0 3px 3px #ccc)	
+	+border-radius(21px)
+	overflow: hidden
+	.btn, strong
+		float: left
+	.btn
+		width: 120px
+		padding: 0 0 0 10px
+		color: #fff
+		text-align: center
+		+border-radius(21px 0 0 21px)
+		&:hover
+			text-decoration: none
+	strong
+		position: relative
+		height: 42px
+		padding: 0 14px 0 34px
+		line-height: 42px
+		+background-image(linear-gradient(top, #e1e1e1, #fff))
+		color: $brown
+		&:before
+			content: ""
+			position: absolute
+			top: 14px
+			left: 11px
+			+sized-sprite($icons, star)
+.vote_value
+	+box-shadow(none)
+	.btn
+		display: none
+	strong
+		background: none
+.vote_done 
+	.btn
+		+background-image(linear-gradient(top, #cecece, #c6c6c6))
+		+box-shadow(none)	
+		cursor: default
+		&:hover
+			+background-image(linear-gradient(top, #cecece, #c6c6c6))
+.more
+	height: 22px
+	margin-bottom: 60px
+	border-bottom: 1px solid #d0d0d0 
+	text-align: center
+	.btn
+		padding: 0 23px
+.loader
+	text-align: center

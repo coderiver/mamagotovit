@@ -33,9 +33,9 @@
 						<a class="nav__item-5" href="#">Конкурс<i></i></a>
 						<div class="nav__sub">
 							<ul>
-								<li><a href="#">Участники</a></li>
+								<li class="active"><a href="#">Участники</a></li>
 								<li><a href="#">Призы</a></li>
-								<li class="active"><a href="#">О конкурсе</a></li>
+								<li><a href="#">О конкурсе</a></li>
 								<li><a href="#">Твоя работа</a></li>
 							</ul>
 						</div>
@@ -52,67 +52,71 @@
 		</div>		
 	</header>
 	<!-- END .header -->
-	<section class="container">
-		<!-- BEGIN .main-action -->
-		<div class="main-action">
-			<h1 class="h1">Кому, как не маме, нужен помощник на кухне!</h1>
-			<p>Поделись фото самой забавной трапезы твоего малыша и выиграй потрясающие призы!</p>
-			<a class="btn" href="#">Участвовать</a>
-			<div class="main-action__pic-1"><img src="img/pic1.jpg" alt=""></div>
-			<div class="main-action__pic-2"><img src="img/pic1.jpg" alt=""></div>
-			<div class="main-action__pic-3"><img src="img/pic1.jpg" alt=""></div>
-		</div>
-		<!-- END .main-action -->
-	</section>
-	<!-- BEGIN .prizes -->
-	<section class="prizes">
-		<div class="container">
-			<h2 class="h2">Мамины помощники:</h2>
+	<section class="container">				
+		<div class="tabs">
+		 	<h1 class="h1">Участники:</h1>
 			<ul>
-				<li>
-					<div class="prizes__title">Суперприз – набор:</div>
-					<div class="prizes__by-title">Подарок от:</div>
-					<div class="prizes__by"><img src="img/prize-by.jpg" alt=""></div>
-					<div class="prizes__item prizes__item-1">
-						<img src="img/pic2.jpg" alt="">
-						<span>Мультиварка Panasonic</span>
-					</div>
-					<div class="prizes__item prizes__item-2">
-						<img src="img/pic2.jpg" alt="">
-						<span>Электрическая мясорубка Panasonic</span>
-					</div>
-					<div class="prizes__item prizes__item-3">
-						<img src="img/pic2.jpg" alt="">
-						<span>Автоматическая хлебопекарня Panasonic</span>
-					</div>
-				</li>
-				<li>
-					<div class="prizes__title">Поощрительный приз:</div>
-					<div class="prizes__by-title">Подарок от:</div>
-					<div class="prizes__by"><img src="img/prize-by.jpg" alt=""></div>
-					<div class="prizes__item prizes__item-4">
-						<img src="img/pic3.jpg" alt="">
-						<span>Мультиварка Panasonic<strong>4 приза</strong></span>											
-					</div>
-				</li>
-				<li>
-					<div class="prizes__title">Поощрительный приз:</div>
-					<div class="prizes__by-title">Подарок от:</div>
-					<div class="prizes__by"><img src="img/prize-by.jpg" alt=""></div>
-					<div class="prizes__item prizes__item-4">
-						<img src="img/pic3.jpg" alt="">
-						<span>Блендер Panasonic<strong>36 призов</strong></span>											
-					</div>
-				</li>
+				<li><a href="#">1-ая неделя</a></li>
+				<li><a href="#">2-ая неделя</a></li>
+				<li class="no-active"><a href="#">3-ая неделя</a></li>
+				<li class="active"><a href="#">4-ая неделя</a></li>
 			</ul>
 		</div>
 	</section>
-	<!-- END .prizes -->
-	<!-- BEGIN .participants -->
+	<!-- BEGIN .advert -->
+	<section class="advert advert_prizes-mod">
+		<div class="container">
+			<div class="advert-title">Поделись фото самой забавной трапезы твоего малыша и выиграй потрясающие призы!</div>
+			<ul>
+				<li>
+					<img src="img/pic6.jpg" alt="">
+					<strong>Суперприз</strong>	
+				</li>
+				<li>
+					<img src="img/pic6.jpg" alt="">
+					<strong>4 мультиварки</strong>	
+				</li>
+				<li>
+					<img src="img/pic6.jpg" alt="">
+					<strong>36 блендеров</strong>	
+				</li>
+			</ul>
+			<div class="advert-right">
+				<strong>Прими участие!</strong>
+				<a href="#" class="btn">Опубликуй фото</a>
+			</div>			
+		</div>
+	</section>
+	<section class="advert advert_date">
+		<div class="container">
+			<div class="advert-title">
+				<p>Розыгрыш состоится <span>23 апреля.</span></p>
+				<p>Спеши собирать баллы!</p>
+			</div>
+		</div>
+	</section>
+	<!-- END .advert -->
 	<section class="container">
+		<!-- BEGIN .participants -->
 		<div class="participants">
-			<h2 class="h2">Участники:</h2>
 			<ul class="participants__list">
+				<li class="participants__item">
+					<a href="#">
+						<div class="participants__pic">
+							<img src="img/pic4.jpg" alt="">
+							<div class="participants__pic-out"></div>
+							<div class="participants__logo"></div>
+						</div>
+					</a>
+					<div class="participants__info">
+						<a href="#">Владимир Бабичев</a>
+						<p>Сына любит кушать</p>	
+						<div class="vote vote_done">
+							<a class="btn" href="#">Спасибо</a>
+							<strong>4265</strong>
+						</div>					
+					</div>					
+				</li>
 				<li class="participants__item">
 					<a href="#">
 						<div class="participants__pic">
@@ -126,8 +130,42 @@
 						<p>Сына любит кушать</p>	
 						<div class="vote">
 							<a class="btn" href="#">Голосовать</a>
-							<strong>4265</strong>
+							<strong>4</strong>
 						</div>					
+					</div>					
+				</li>
+				<li class="participants__item">
+					<a href="#">
+						<div class="participants__pic">
+							<img src="img/pic4.jpg" alt="">
+							<div class="participants__pic-out"></div>
+							<div class="participants__logo"></div>
+						</div>
+					</a>
+					<div class="participants__info">
+						<a href="#">Владимир Бабичев</a>
+						<p>Сына любит кушать</p>	
+						<div class="vote">
+							<a class="btn" href="#">Голосовать</a>
+							<strong>42</strong>
+						</div>					
+					</div>					
+				</li>
+				<li class="participants__item">
+					<a href="#">
+						<div class="participants__pic">
+							<img src="img/pic4.jpg" alt="">
+							<div class="participants__pic-out"></div>
+							<div class="participants__logo"></div>
+						</div>
+					</a>
+					<div class="participants__info">
+						<a href="#">Владимир Бабичев</a>
+						<p>Сына любит кушать</p>	
+						<div class="vote">
+							<a class="btn" href="#">Голосовать</a>
+							<strong>42</strong>
+						</div>						
 					</div>					
 				</li>
 				<li class="participants__item">
@@ -217,11 +255,11 @@
 				</li>
 			</ul>
 		</div>
+		<!-- END .participants -->		
 	</section>
-	<!-- END .participants -->
 	<!-- BEGIN .more -->
 	<div class="more">
-		<a class="btn" href="#">Все фотографии</a>
+		<a class="btn" href="#">Показать еще 12</a>
 	</div>
 	<!-- END .more -->	
 	<div class="push"></div>

@@ -38,7 +38,7 @@
 .prizes
 	margin-bottom: 35px
 	padding: 30px 0
-	background: url(../img/helpers-bg.jpg)
+	background: url(../img/yellow-bg.jpg)
 	color: $blue
 	.h2
 		margin-bottom: 35px
@@ -129,23 +129,28 @@
 .participants
 	margin-bottom: 15px
 	.h2
-		margin-bottom: 20px
+		padding-bottom: 20px
 		text-align: center
-	ul
-		font-size: 0
-		text-align: center
-	li
-		display: inline-block
-		vertical-align: top
-		width: 300px
-		padding: 0 10px
-		margin-bottom: 40px
+.participants_all
+	.h2
+		padding: 30px 0
+		font-weight: 400 
+.participants__list
+	font-size: 0
+	text-align: center
+.participants__item
+	display: inline-block
+	vertical-align: top
+	width: 300px
+	padding: 0 10px
+	margin-bottom: 40px
 .participants__pic
 	position: relative
 	height: 240px
 	margin-bottom: 5px
 	+border-radius(10px)
 	+box-shadow(0 0px 12px #cccccc)
+	background: url(../img/body-bg.jpg)
 	img
 		position: relative
 		top: 9px
@@ -172,36 +177,55 @@
 	p
 		margin: 5px 0
 		color: #282828 
-.participants__vote
-	display: inline-block
-	+box-shadow(0 3px 3px #ccc)	
-	+border-radius(21px)
-	overflow: hidden
-	a, strong
-		float: left
-	a
-		padding: 0 8px 0 18px
-		color: #fff
-		+border-radius(0px)
-		&:hover
-			text-decoration: none
-	strong
-		position: relative
-		height: 42px
-		padding: 0 14px 0 34px
-		line-height: 42px
-		+background-image(linear-gradient(top, #e1e1e1, #fff))
-		color: $brown
-		&:before
-			content: ""
-			position: absolute
-			top: 14px
-			left: 11px
-			+sized-sprite($icons, star)
-.more
-	height: 22px
-	margin-bottom: 45px
-	border-bottom: 1px solid #d0d0d0 
+	.vote
+		a
+			color: #fff
+			&:hover
+				text-decoration: none
+.tabs	
+	margin-bottom: 45px	
+	font-size: 0
 	text-align: center
-	.btn
-		padding: 0 23px
+	.h1
+		padding: 40px 0 30px 0
+		font-size: 40px
+	ul, li
+		display: inline-block
+	ul
+		+box-shadow(rgba(0,0,0,0.3) 0 1px 3px)
+		+background-image(linear-gradient(top, #fff, #e1e1e1))
+		+border-radius(10px)
+		overflow: hidden
+	li
+		vertical-align: top
+		&:first-child
+			a
+				border-left: none
+		&:last-child
+			a
+				border-right: none 
+		&.no-active
+			a
+				+background-image(linear-gradient(top, #fff, #e1e1e1))
+				font-weight: 400 
+				color: #969696
+				cursor: default
+		&.active
+			a
+				+background-image(linear-gradient(top, #e1e1e1, #fff))
+				font-weight: 700
+				color: $brown 
+				cursor: default
+	a
+		display: block
+		width: 195px
+		height: 40px		
+		border-left: 1px solid #e1e1e1 
+		border-right: 1px solid #fff
+		text-align: center
+		line-height: 40px
+		font-size: 17px
+		color: $blue
+		&:hover
+			+background-image(linear-gradient(top, #f1f1f1, #d5d5d5))
+			font-weight: 700 		
