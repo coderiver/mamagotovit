@@ -176,31 +176,39 @@ table { border-spacing: 0; border-collapse: collapse; }
 
 .prizes { margin-bottom: 35px; padding: 30px 0; background: url(../img/yellow-bg.jpg); color: #2c6aa7; }
 .prizes .h2 { margin-bottom: 35px; text-align: center; }
-.prizes ul { font-size: 0; }
-.prizes li { position: relative; display: inline-block; width: 295px; height: 400px; vertical-align: top; }
-.prizes li .prizes__by-title { right: 5px; }
-.prizes li .prizes__by { top: 50px; left: 200px; z-index: 3; }
-.prizes li:first-child { width: 410px; }
-.prizes li:first-child .prizes__by-title { left: 139px; }
-.prizes li:first-child .prizes__by { top: 80px; left: 155px; }
-.prizes .prizes__by-title { position: absolute; top: 40px; font-size: 18px; font-weight: 700; text-shadow: white 2px 0px 1px, white 2px 2px 1px, white 0px 2px 1px, white -2px 2px 1px, white -2px 0px 1px, white -2px -2px 1px, white 0px -2px 1px, white 2px -2px 1px, rgba(0, 0, 0, 0.75) 3px 3px 8px; z-index: 5; }
-.prizes .prizes__title { text-align: center; font-size: 24px; }
-.prizes .prizes__by, .prizes .prizes__item { position: absolute; }
-.prizes .prizes__by img, .prizes .prizes__item img { display: block; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; border: 1px solid #ccb59a; }
+.prizes .prizes__list { font-size: 0; }
+.prizes .prizes__item { position: relative; display: inline-block; width: 295px; vertical-align: top; }
+.prizes .prizes__item .prizes__by-title { right: 5px; }
+.prizes .prizes__item .prizes__by { top: 10px; left: 200px; z-index: 3; }
+.prizes .prizes__item_mod { width: 410px; }
+.prizes .prizes__item_mod .prizes__by-title { left: 139px; }
+.prizes .prizes__item_mod .prizes__by { left: 155px; }
+.prizes .prizes__info { position: relative; height: 320px; }
+.prizes .prizes__by-title { position: absolute; top: 5px; font-size: 18px; font-weight: 700; text-shadow: white 2px 0px 1px, white 2px 2px 1px, white 0px 2px 1px, white -2px 2px 1px, white -2px 0px 1px, white -2px -2px 1px, white 0px -2px 1px, white 2px -2px 1px, rgba(0, 0, 0, 0.75) 3px 3px 8px; z-index: 5; }
+.prizes .prizes__title { margin-bottom: 50px; text-align: center; font-size: 24px; }
+.prizes .prizes__by, .prizes .prizes__subject { position: absolute; }
+.prizes .prizes__by img, .prizes .prizes__subject img { display: block; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; border: 1px solid #ccb59a; }
 .prizes .prizes__by { width: 70px; height: 70px; }
 .prizes .prizes__by img { -webkit-box-shadow: rgba(0, 0, 0, 0.24) 4px 4px 9px; -moz-box-shadow: rgba(0, 0, 0, 0.24) 4px 4px 9px; box-shadow: rgba(0, 0, 0, 0.24) 4px 4px 9px; }
-.prizes .prizes__item { position: absolute; width: 150px; height: 150px; }
-.prizes .prizes__item span { position: absolute; top: 160px; width: 140px; text-align: center; font-size: 14px; line-height: 1.3; }
-.prizes .prizes__item-1, .prizes .prizes__item-2 { top: 70px; }
-.prizes .prizes__item-1 { top: 70px; left: 0; }
-.prizes .prizes__item-1 span { left: -15px; }
-.prizes .prizes__item-2 { left: 230px; }
-.prizes .prizes__item-2 span { left: 40px; }
-.prizes .prizes__item-3 { top: 160px; left: 115px; }
-.prizes .prizes__item-3 span { left: 7px; }
-.prizes .prizes__item-4 { top: 60px; left: 50%; width: 216px; height: 216px; margin-left: -108px; }
-.prizes .prizes__item-4 span { top: 240px; left: 7px; width: 100%; font-size: 18px; }
-.prizes .prizes__item-4 strong { display: block; }
+.prizes .prizes__subject { position: absolute; width: 150px; height: 150px; }
+.prizes .prizes__subject span { position: absolute; top: 160px; width: 140px; text-align: center; font-size: 14px; line-height: 1.3; }
+.prizes .prizes__subject-1, .prizes .prizes__subject-2 { top: 0; }
+.prizes .prizes__subject-1 { left: 0; }
+.prizes .prizes__subject-1 span { left: -15px; }
+.prizes .prizes__subject-2 { left: 230px; }
+.prizes .prizes__subject-2 span { left: 40px; }
+.prizes .prizes__subject-3 { top: 90px; left: 115px; }
+.prizes .prizes__subject-3 span { left: 7px; }
+.prizes .prizes__subject-4 { top: -5px; left: 50%; width: 216px; height: 216px; margin-left: -108px; }
+.prizes .prizes__subject-4 span { top: 240px; left: 7px; width: 100%; font-size: 18px; }
+.prizes .prizes__subject-4 strong { display: block; }
+
+.prizes_mod { background: none; text-align: center; }
+.prizes_mod .prisez__txt { margin-bottom: 60px; font-size: 18px; color: #3f3f3f; line-height: 1.4; }
+.prizes_mod .prizes__item { margin: 0 75px; }
+.prizes_mod .prizes__item_mod { margin: 60px 75px 0 75px; }
+.prizes_mod .prizes__item_mod .prizes__by-title { text-align: left; }
+.prizes_mod .prizes__title { margin-bottom: 30px; font-weight: 700; }
 
 .participants { margin-bottom: 15px; }
 .participants .h2 { padding-bottom: 20px; text-align: center; }
@@ -343,9 +351,9 @@ table { border-spacing: 0; border-collapse: collapse; }
 
 .advert { padding: 20px 43px 20px 33px; background: url(../img/yellow-bg.jpg); -webkit-box-shadow: rgba(0, 0, 0, 0.32) 0 0 4px inset; -moz-box-shadow: rgba(0, 0, 0, 0.32) 0 0 4px inset; box-shadow: rgba(0, 0, 0, 0.32) 0 0 4px inset; overflow: hidden; }
 
-.advert-title { font-size: 20px; color: #6d6560; font-weight: 700; }
+.advert__title { font-size: 20px; color: #6d6560; font-weight: 700; }
 
-.advert_bonus .advert-title { float: left; width: 360px; }
+.advert_bonus .advert__title { float: left; width: 360px; }
 .advert_bonus a { position: relative; float: right; padding: 0 105px 0 30px; }
 .advert_bonus span { position: absolute; top: 3px; right: 20px; padding-left: 15px; border-left: 1px solid #518bc3; font-size: 22px; font-weight: 700; text-align: center; line-height: 1; }
 .advert_bonus i { display: block; font-style: normal; font-weight: 400; font-size: 13px; }
@@ -357,26 +365,31 @@ table { border-spacing: 0; border-collapse: collapse; }
 .advert_prizes li, .advert_prizes-mod li { display: inline-block; padding: 0 15px; }
 
 .advert_prizes { text-align: center; }
-.advert_prizes .advert-title { margin-bottom: 20px; }
+.advert_prizes .advert__title { margin-bottom: 20px; }
 .advert_prizes ul { margin-bottom: 20px; }
 .advert_prizes strong { display: block; margin-top: 10px; font-size: 16px; color: #2c6aa7; }
 
-.advert_prizes-mod, .advert_date { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; margin-bottom: 50px; }
+.advert_prizes-mod, .advert_date, .advert_participate { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; margin-bottom: 50px; }
 
 .advert_prizes-mod .container { overflow: hidden; }
-.advert_prizes-mod .advert-title { float: left; width: 325px; margin: 25px 0 0 25px; font-size: 18px; line-height: 1.4; }
+.advert_prizes-mod .advert__title { float: left; width: 325px; margin: 25px 0 0 25px; font-size: 18px; line-height: 1.4; }
 .advert_prizes-mod ul { float: left; margin-bottom: 10px; }
 .advert_prizes-mod li { float: left; padding: 0 10px; text-align: center; }
 .advert_prizes-mod strong { display: block; margin-top: 10px; font-size: 16px; color: #2c6aa7; }
 .advert_prizes-mod .advert-right { float: right; width: 200px; margin-right: 25px; text-align: center; }
 .advert_prizes-mod .advert-right strong { display: block; padding: 10px 0; font-size: 20px; color: #6d6560; }
 
-.advert_date { padding: 30px 0; }
-.advert_date .advert-title p { padding: 5px 0; text-align: center; font-size: 29px; font-weight: normal; }
-.advert_date .advert-title span { font-weight: 700; color: #dc5c6c; }
+.advert_date, .advert_participate { padding: 30px 0; }
+
+.advert_date .advert__title p { padding: 5px 0; text-align: center; font-size: 29px; font-weight: normal; }
+.advert_date .advert__title span { font-weight: 700; color: #dc5c6c; }
+
+.advert_participate .advert__title { float: left; font-size: 32px; }
+.advert_participate .advert__title p { margin-bottom: 10px; font-size: 24px; font-weight: normal; }
+.advert_participate .btn { float: right; margin: 20px 25px 0 0; }
 
 .advert_winner { padding: 20px 25px 20px 15px; }
 .advert_winner img { float: left; margin-right: 15px; }
-.advert_winner .advert-title { float: left; padding-top: 10px; font-size: 24px; }
-.advert_winner .advert-title p { margin-top: 5px; font-size: 21px; font-weight: normal; }
+.advert_winner .advert__title { float: left; padding-top: 10px; font-size: 24px; }
+.advert_winner .advert__title p { margin-top: 5px; font-size: 21px; font-weight: normal; }
 .advert_winner .btn { float: right; margin-top: 10px; }

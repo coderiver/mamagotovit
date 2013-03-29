@@ -317,12 +317,12 @@
 	background: url(../img/yellow-bg.jpg)
 	+box-shadow(rgba(0,0,0,0.32) 0 0 4px inset)
 	overflow: hidden
-.advert-title
+.advert__title
 	font-size: 20px
 	color: $brown
 	font-weight: 700 
 .advert_bonus
-	.advert-title
+	.advert__title
 		float: left
 		width: 360px		
 	a
@@ -361,7 +361,7 @@
 		padding: 0 15px
 .advert_prizes
 	text-align: center
-	.advert-title
+	.advert__title
 		margin-bottom: 20px
 	ul
 		margin-bottom: 20px
@@ -370,13 +370,13 @@
 		margin-top: 10px
 		font-size: 16px
 		color: $blue	
-.advert_prizes-mod, .advert_date
+.advert_prizes-mod, .advert_date, .advert_participate
 	+box-shadow(none)
 	margin-bottom: 50px
 .advert_prizes-mod
 	.container
 		overflow: hidden
-	.advert-title
+	.advert__title
 		float: left
 		width: 325px
 		margin: 25px 0 0 25px
@@ -404,9 +404,10 @@
 			padding: 10px 0
 			font-size: 20px
 			color: $brown
-.advert_date
+.advert_date, .advert_participate
 	padding: 30px 0
-	.advert-title
+.advert_date
+	.advert__title
 		p
 			padding: 5px 0
 			text-align: center
@@ -415,12 +416,23 @@
 		span
 			font-weight: 700
 			color: #dc5c6c 
+.advert_participate
+	.advert__title
+		float: left
+		font-size: 32px
+		p
+			margin-bottom: 10px
+			font-size: 24px
+			font-weight: normal
+	.btn
+		float: right
+		margin: 20px 25px 0 0
 .advert_winner
 	padding: 20px 25px 20px 15px
 	img
 		float: left
 		margin-right: 15px
-	.advert-title
+	.advert__title
 		float: left
 		padding-top: 10px
 		font-size: 24px

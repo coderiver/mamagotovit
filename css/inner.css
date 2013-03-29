@@ -102,9 +102,9 @@
 
 .advert { padding: 20px 43px 20px 33px; background: url(../img/yellow-bg.jpg); -webkit-box-shadow: rgba(0, 0, 0, 0.32) 0 0 4px inset; -moz-box-shadow: rgba(0, 0, 0, 0.32) 0 0 4px inset; box-shadow: rgba(0, 0, 0, 0.32) 0 0 4px inset; overflow: hidden; }
 
-.advert-title { font-size: 20px; color: #6d6560; font-weight: 700; }
+.advert__title { font-size: 20px; color: #6d6560; font-weight: 700; }
 
-.advert_bonus .advert-title { float: left; width: 360px; }
+.advert_bonus .advert__title { float: left; width: 360px; }
 .advert_bonus a { position: relative; float: right; padding: 0 105px 0 30px; }
 .advert_bonus span { position: absolute; top: 3px; right: 20px; padding-left: 15px; border-left: 1px solid #518bc3; font-size: 22px; font-weight: 700; text-align: center; line-height: 1; }
 .advert_bonus i { display: block; font-style: normal; font-weight: 400; font-size: 13px; }
@@ -116,26 +116,31 @@
 .advert_prizes li, .advert_prizes-mod li { display: inline-block; padding: 0 15px; }
 
 .advert_prizes { text-align: center; }
-.advert_prizes .advert-title { margin-bottom: 20px; }
+.advert_prizes .advert__title { margin-bottom: 20px; }
 .advert_prizes ul { margin-bottom: 20px; }
 .advert_prizes strong { display: block; margin-top: 10px; font-size: 16px; color: #2c6aa7; }
 
-.advert_prizes-mod, .advert_date { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; margin-bottom: 50px; }
+.advert_prizes-mod, .advert_date, .advert_participate { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; margin-bottom: 50px; }
 
 .advert_prizes-mod .container { overflow: hidden; }
-.advert_prizes-mod .advert-title { float: left; width: 325px; margin: 25px 0 0 25px; font-size: 18px; line-height: 1.4; }
+.advert_prizes-mod .advert__title { float: left; width: 325px; margin: 25px 0 0 25px; font-size: 18px; line-height: 1.4; }
 .advert_prizes-mod ul { float: left; margin-bottom: 10px; }
 .advert_prizes-mod li { float: left; padding: 0 10px; text-align: center; }
 .advert_prizes-mod strong { display: block; margin-top: 10px; font-size: 16px; color: #2c6aa7; }
 .advert_prizes-mod .advert-right { float: right; width: 200px; margin-right: 25px; text-align: center; }
 .advert_prizes-mod .advert-right strong { display: block; padding: 10px 0; font-size: 20px; color: #6d6560; }
 
-.advert_date { padding: 30px 0; }
-.advert_date .advert-title p { padding: 5px 0; text-align: center; font-size: 29px; font-weight: normal; }
-.advert_date .advert-title span { font-weight: 700; color: #dc5c6c; }
+.advert_date, .advert_participate { padding: 30px 0; }
+
+.advert_date .advert__title p { padding: 5px 0; text-align: center; font-size: 29px; font-weight: normal; }
+.advert_date .advert__title span { font-weight: 700; color: #dc5c6c; }
+
+.advert_participate .advert__title { float: left; font-size: 32px; }
+.advert_participate .advert__title p { margin-bottom: 10px; font-size: 24px; font-weight: normal; }
+.advert_participate .btn { float: right; margin: 20px 25px 0 0; }
 
 .advert_winner { padding: 20px 25px 20px 15px; }
 .advert_winner img { float: left; margin-right: 15px; }
-.advert_winner .advert-title { float: left; padding-top: 10px; font-size: 24px; }
-.advert_winner .advert-title p { margin-top: 5px; font-size: 21px; font-weight: normal; }
+.advert_winner .advert__title { float: left; padding-top: 10px; font-size: 24px; }
+.advert_winner .advert__title p { margin-top: 5px; font-size: 21px; font-weight: normal; }
 .advert_winner .btn { float: right; margin-top: 10px; }

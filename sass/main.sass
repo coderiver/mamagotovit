@@ -43,38 +43,40 @@
 	.h2
 		margin-bottom: 35px
 		text-align: center
-	ul
+	.prizes__list
 		font-size: 0		
-	li
+	.prizes__item
 		position: relative
 		display: inline-block
 		width: 295px
-		height: 400px
 		vertical-align: top
 		.prizes__by-title
 			right: 5px
 		.prizes__by		
-			top: 50px
+			top: 10px
 			left: 200px
 			z-index: 3 
-		&:first-child
-			width: 410px
-			.prizes__by-title
-				left: 139px
-			.prizes__by		
-				top: 80px
-				left: 155px
+	.prizes__item_mod
+		width: 410px
+		.prizes__by-title
+			left: 139px
+		.prizes__by		
+			left: 155px
+	.prizes__info
+		position: relative
+		height: 320px
 	.prizes__by-title
 		position: absolute
-		top: 40px
+		top: 5px
 		font-size: 18px
 		font-weight: 700
 		text-shadow: #fff 2px 0px 1px, #fff 2px 2px 1px, #fff 0px 2px 1px, #fff -2px 2px 1px, #fff -2px 0px 1px, #fff -2px -2px 1px, #fff 0px -2px 1px, #fff 2px -2px 1px, rgba(0,0,0,0.75) 3px 3px 8px
 		z-index: 5 
 	.prizes__title
+		margin-bottom: 50px
 		text-align: center
 		font-size: 24px
-	.prizes__by, .prizes__item
+	.prizes__by, .prizes__subject
 		position: absolute
 		img
 			display: block
@@ -85,7 +87,7 @@
 		height: 70px
 		img
 			+box-shadow(rgba(0,0,0,0.24) 4px 4px 9px)				
-	.prizes__item
+	.prizes__subject
 		position: absolute
 		width: 150px
 		height: 150px
@@ -96,24 +98,23 @@
 			text-align: center
 			font-size: 14px
 			line-height: 1.3
-	.prizes__item-1, .prizes__item-2
-		top: 70px
-	.prizes__item-1
-		top: 70px
+	.prizes__subject-1, .prizes__subject-2
+		top: 0
+	.prizes__subject-1
 		left: 0
 		span
 			left: -15px
-	.prizes__item-2
+	.prizes__subject-2
 		left: 230px
 		span
 			left: 40px
-	.prizes__item-3
-		top: 160px
+	.prizes__subject-3
+		top: 90px
 		left: 115px
 		span
 			left: 7px
-	.prizes__item-4
-		top: 60px
+	.prizes__subject-4
+		top: -5px
 		left: 50%
 		width: 216px
 		height: 216px
@@ -125,6 +126,23 @@
 			font-size: 18px
 		strong
 			display: block
+.prizes_mod
+	background: none 
+	text-align: center
+	.prisez__txt
+		margin-bottom: 60px
+		font-size: 18px
+		color: #3f3f3f
+		line-height: 1.4
+	.prizes__item
+		margin: 0 75px
+	.prizes__item_mod
+		margin: 60px 75px 0 75px
+		.prizes__by-title
+			text-align: left
+	.prizes__title
+		margin-bottom: 30px
+		font-weight: 700 
 //participants
 .participants
 	margin-bottom: 15px
