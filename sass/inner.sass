@@ -518,4 +518,110 @@
 			top: -10px
 			left: 25px
 			+sized-sprite($icons, load)
-		
+.overlay
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	background: rgba(#000,.7)
+	z-index: 100
+.popup
+	box-shadow: 0 0 10px rgba(#000,.6)
+	z-index: 200 
+	width: 710px - 28px - 28px
+	background: #ffffff
+	border-radius: 15px 
+	position: fixed
+	left: 50% 
+	top: 100px 
+	margin-left: -355px 
+	padding: 28px 
+	.popup__close
+		+sized-sprite($icons, close)
+		position: absolute
+		top: -10px 
+		right: -10px 
+		cursor: pointer
+	h2
+		font-family: 'Open Sans', Arial, Tahoma, sans-serif
+		font-size: 28px 
+		color: #6d6560 
+		text-align: center
+		font-weight: normal
+		margin-bottom: 35px 
+	.form
+		.form__socials
+			text-align: center
+			a
+				margin-left: 6px
+				&:first-child
+					margin-left: 0 
+		.form__row
+			overflow: hidden
+			width: 100% 
+			margin-bottom: 30px 
+			font-size: 16px 
+			color: #3f3f3f 
+			label
+				float: left
+				width: 150px 
+				text-align: right
+				margin-right: 20px 
+				padding-top: 7px 
+			input
+				border: 2px solid #c9c2c2
+				@include border-radius(5px)
+				@include background-clip(padding-box)
+				background-color: #fff
+				width: 380px 
+				vertical-align: middle
+				padding: 5px 10px
+				font-size: 16px 
+				&.input_short
+					width: 85px 
+			span
+				vertical-align: middle
+				margin-left: 10px 
+		.form__rowphoto
+			label
+				padding-top: 30px 
+			.userphoto
+				width: 100px 
+				height: 100px 
+				position: relative
+				display: inline-block
+				.userphoto__edit
+					position: absolute
+					bottom: 0
+					left: 0
+					right: 0   
+					background: #000 
+					background: rgba(#000,.6) 
+					font-size: 14px 
+					color: #fff 
+					padding: 6px 6px
+					cursor: pointer
+					i
+						display: inline-block
+						vertical-align: middle
+						+sized-sprite($icons, clip)
+						margin-right:  4px
+		.form__bottom
+			margin-left: 170px 
+		.button
+			display: inline-block
+			text-decoration: none
+			font-size: 21px 
+			height: 50px 
+			line-height: 50px 
+			padding: 0 28px 
+			font-family: 'Open Sans', Arial, Tahoma, sans-serif
+			@include border-radius(10px)
+			@include background-clip(padding-box)
+			background-color: #35598d
+			color: #fff 
+			@include box-shadow(1px 2px 4px rgba(1,1,1,.27), inset 0 0 8px rgba(255,255,255,.42))
+			@include background-image(linear-gradient(bottom, #2b4f7f 0%, #2b4f7f 19.56%, #4b77af 100%))
+
+
